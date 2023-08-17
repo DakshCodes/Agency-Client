@@ -1,0 +1,208 @@
+#work {
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    padding-top: 150px;
+    position: relative;
+    width: 100%;
+    height: 210vw;
+    background-color: #f2f2f2;
+    border: 1px solid red;
+}
+
+@media (min-width : 360px) and (max-width : 880px) {
+    #work {
+        transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        padding-top: 150px;
+        position: relative;
+        width: 100%;
+        height: 250vw;
+        background-color: #f2f2f2;
+        border: 1px solid red;
+    }
+}
+
+#work::before {
+    content: "";
+    top: -60px;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    transform: rotate(-180deg);
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size: cover;
+
+}
+
+
+#work .workrow {
+    padding: 0 6vw;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.workrow h1 {
+    display: flex;
+    align-items: baseline;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.workrow h1 span {
+    color: #14CF93;
+    font-style: italic;
+    font-size: 5vw;
+}
+
+.workrow img {
+    transform: rotate(135deg);
+    mix-blend-mode: exclusion;
+    width: 4vw;
+}
+
+
+#images {
+    margin-top: 7vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100vw;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    padding: 0 5vw;
+}
+
+.cnt {
+    width: 55%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cnt img {
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    width: 105%;
+}
+
+.cnt-1 {
+    width: 55%;
+}
+
+.cnt-2 {
+    width: 32%;
+    margin-right: 2vw;
+}
+
+.cnt-3 {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    top: 60vw;
+    width: 48%;
+    height: 49%;
+}
+
+.cnt-4 {
+    position: absolute;
+    right: 15%;
+    transform: translateX(20%);
+    top: 120vw;
+    width: 49%;
+    height: 49%;
+}
+
+.cnt-5 {
+    position: absolute;
+    left: 10%;
+    transform: translateX(-20%);
+    top: 140vw;
+    width: 38%;
+    height: 38%;
+}
+
+#cursor {
+    position: fixed;
+    width: 14vw;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+#cursor>div {
+    pointer-events: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    opacity: 0;
+    position: absolute;
+}
+
+#elem {
+    width: 100%;
+    position: relative;
+}
+
+#cursor .crow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: .7vw;
+}
+
+.crow .ccircle {
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.crow .ccapsule {
+    padding: .7vw 3vw;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+#elem img {
+    width: 100%;
+    opacity: 0;
+    animation: an 4s linear infinite;
+    position: absolute;
+
+}
+
+#elem img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+#elem img:nth-child(3) {
+    animation-delay: 2s;
+}
+
+#elem img:nth-child(4) {
+    animation-delay: 4s;
+}
+
+
+@keyframes an {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    21% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,146 @@
+/*  Contact */
+
+.contact{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+}
+/* styles.css */
+.form-item-label {
+    color: white;
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    /* -webkit-appearance: none; */
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: white;
+    /* Not removed via appearance */
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+
+.screen {
+    height: fit-content;
+    position: relative;
+    background-color: #000000;
+    background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    border-radius: 15px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+
+
+.screen-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:  #0ea575;
+    font-size: 36px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.app-title span .line {
+    position: absolute;
+    bottom: -18%;
+    display: inline-block;
+    height: 3px;
+    border-radius: 50%;
+    transform: rotate(-4deg);
+    background-color: #0ea575;;
+
+}
+
+#line1 {
+    left: 0;
+    width: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition-delay: .1s;
+}
+
+#line2 {
+    right: 0;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.app-title span:hover #line2 {
+    width: 0;
+} 
+
+.app-title span:hover #line1 {
+    width: 100%;
+}
