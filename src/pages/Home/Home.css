@@ -1,25 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Playfair+Display&family=Poppins&family=Raleway&display=swap');
 
-/* * { */
-/* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
-/* font-family: 'Lato', sans-serif; */
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Playfair Display', serif; */
-/* font-family: 'Poppins', sans-serif; */
+@font-face {
+    font-family: gilroy;
+    src: url("./Gilroy-Light.otf") format("opentype");
+}
 
-/* } */
-/* html,
-body {
-    width: 100%;
-    height: 100%;
-}  */
+
 
 #main {
-    font-family: 'Raleway', sans-serif;
+    font-family: gilroy, 'Raleway';
     width: 100%;
-    /* overflow: hidden; */
+
 }
 
 .page1 {
@@ -28,8 +19,6 @@ body {
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-  
-
 }
 
 .page1 .box-img {
@@ -49,12 +38,6 @@ body {
     height: 751px;
 }
 
-/* .page2 {
-    height: 70vh;
-    background-image: linear-gradient(175deg, #6283ed 25%, #ffe2cc 70%);
-
-} */
-/* Moon Effect */
 
 .container-moon {
     position: absolute;
@@ -134,7 +117,7 @@ body {
     overflow: hidden;
     transition: all 0.3s;
     border-radius: 12px;
-    background-color: #ecd448;
+    background-color: #14CF93;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
 }
@@ -144,7 +127,7 @@ body {
     position: absolute;
     width: 100px;
     height: 120%;
-    background-color: #ff6700;
+    background-color: #000000;
     top: 50%;
     transform: skewX(30deg) translate(-180%, -50%);
     transition: all 0.5s;
@@ -166,7 +149,7 @@ body {
 }
 
 #loader {
-    /* display: none; */
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -177,7 +160,7 @@ body {
 
 #loader #topheading {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -187,14 +170,17 @@ body {
 #topheading h5 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
 }
 
 #loader h1 {
     display: flex;
+    align-items: center;
+    /* justify-content: ; */
     justify-content: center;
     width: 100%;
+    /* border: 1px solid red; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -206,6 +192,22 @@ body {
 .singh {
     font-family: cursive;
     color: #14CF93;
+    margin-right: 2vw;
+}
+
+
+.main-logo {
+    width: 10vw;
+    margin-top: 4vw;
+}
+
+#loader h1 span {
+    font-size: 5vw;
+
+}
+
+#loader h1 .super {
+    margin-right: 30px;
 }
 
 .reveal .parent .child {
@@ -221,11 +223,12 @@ body {
 
 .child span {
     display: inline-block;
+
 }
 
 #green {
     z-index: 999;
-    /* display: none; */
+    display: none;
     overflow: hidden;
     position: absolute;
     top: 100%;
@@ -235,7 +238,7 @@ body {
 }
 
 #blue {
-    /* display: none; */
+    display: none;
     z-index: 999;
     /* display: none; */
     overflow: hidden;
@@ -373,7 +376,7 @@ polyline {
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-  
+
     /* border: 1px solid; */
     padding: 7vw 7vw;
 }
@@ -530,6 +533,7 @@ polyline {
     mix-blend-mode: exclusion;
     width: 4vw;
 }
+
 .mates img {
     transform: rotate(135deg);
     mix-blend-mode: exclusion;
@@ -546,7 +550,7 @@ polyline {
 }
 
 .employes {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     /* margin-top: 7vw; */
 }
@@ -556,7 +560,6 @@ polyline {
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-  
     position: relative;
     color: #fff;
     padding: 0 6vw;
@@ -688,13 +691,13 @@ polyline {
     background: none;
     border: 2px solid #fff;
     font-size: 18px;
-    color: #131313;
+    color: #fff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
     border-radius: 12px;
-    background-color: #ecd448;
+    background-color: #14CF93;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
 }
@@ -704,7 +707,7 @@ polyline {
     position: absolute;
     width: 100px;
     height: 120%;
-    background-color: #ff6700;
+    background-color: #000000;
     top: 50%;
     transform: skewX(30deg) translate(-180%, -50%);
     transition: all 0.5s;
@@ -732,13 +735,13 @@ polyline {
     background: none;
     border: 2px solid #fff;
     font-size: 18px;
-    color: #131313;
+    color: #fff;
     cursor: pointer;
     position: absolute;
     overflow: hidden;
     transition: all 0.3s;
     border-radius: 12px;
-    background-color: #ecd448;
+    background-color:  #14CF93;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
 }
@@ -748,7 +751,7 @@ polyline {
     position: absolute;
     width: 100px;
     height: 120%;
-    background-color: #ff6700;
+    background-color: #000000;
     top: 50%;
     transform: skewX(30deg) translate(-180%, -50%);
     transition: all 0.5s;
@@ -773,14 +776,14 @@ polyline {
 /* pricing */
 
 .pricing {
-    height: 200vh;
-    margin-bottom: 6vw;
+    height: 210vh;
+    margin-bottom: 1vw;
     width: 100%;
     background-color: #000000;
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-  
+
     color: #fff;
 }
 
@@ -791,7 +794,7 @@ polyline {
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-  
+
     position: relative;
     color: #fff;
     padding: 0 6vw;
@@ -804,7 +807,6 @@ polyline {
 .pricing .mates h1 {
     display: flex;
     align-items: baseline;
-
     /* letter-spacing: 10px; */
     font-size: 5vw;
     letter-spacing: 8px;
@@ -835,4 +837,12 @@ polyline {
 
 .pricing .mates img {
     transform: rotate(135deg);
+}
+
+.cls-1 {
+    fill: #fff;
+}
+
+.cls-2 {
+    fill: #47bb8d;
 }

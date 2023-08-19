@@ -48,7 +48,7 @@ const Contact = () => {
                 </div>
             </div>
             <section className='text-white flex py-4'>
-                <article className='m-auto w-[80%] bg-[#171717] p-2 '>
+                <article className='m-auto w-[70%] h-[90%] bg-[#171717] p-2 '>
                     <div className="m-auto flex flex-col text-white  px-4">
                         <Form
                             layout="vertical"
@@ -131,11 +131,9 @@ const Contact = () => {
                                 <TextArea type='text' className='placeholder-gray-500 placeholder:font-semibold mt-3 w-[full] text-white border-none rounded-md h-[2.4rem]' style={{ backgroundColor: '#3e3e3e' }} />
                             </Form.Item>
 
-                            <Button disabled={loading} className='bg-green-600 border-none font-semibold hover:bg-green-900 hover:text-white w-[5rem]' block htmlType='submit'>
+                            <Button disabled={loading} className='bg-green-600 flex justify-center items-center border-none text-white py-5 text-[18px] font-semibold hover:bg-green-900 hover:text-white w-[5rem]' block htmlType='submit'>
                                 {!loading ? "Submit Details" : <Spinner />}
                             </Button>
-
-
                         </Form>
 
                     </div>

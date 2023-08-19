@@ -33,21 +33,12 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>online shop</h4>
-                        <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
                         <h4>follow us</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-facebook-line"></i></a>
+                            <a href="#"><i class="ri-linkedin-line"></i></a>
+                            <a href="#"><i class="ri-twitter-line"></i></a>
                         </div>
                     </div>
                 </div>
