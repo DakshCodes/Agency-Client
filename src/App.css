@@ -7,7 +7,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 
-::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #14CF93;
+  border-radius: 50px;
+
 }

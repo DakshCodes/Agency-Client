@@ -1,4 +1,4 @@
-#work {
+#work-2 {
     transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
     padding-top: 150px;
     position: relative;
@@ -10,7 +10,7 @@
 }
 
 @media (min-width : 360px) and (max-width : 880px) {
-    #work {
+    #work-2 {
         transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
         padding-top: 150px;
         position: relative;
@@ -21,7 +21,7 @@
     }
 }
 
-#work::before {
+#work-2::before {
     content: "";
     top: -60px;
     position: absolute;
@@ -34,7 +34,7 @@
 }
 
 
-#work .workrow {
+#work-2 .workrow-2 {
     padding: 0 6vw;
     display: flex;
     margin-bottom: 20px;
@@ -43,7 +43,7 @@
 
 }
 
-.workrow h1 {
+.workrow-2 h1 {
     display: flex;
     align-items: baseline;
     font-size: 5vw;
@@ -51,13 +51,13 @@
     font-weight: 600;
 }
 
-.workrow h1 span {
+.workrow-2 h1 span {
     color: #14CF93;
     font-style: italic;
     font-size: 5vw;
 }
 
-.workrow img {
+.workrow-2 img {
     transform: rotate(135deg);
     mix-blend-mode: exclusion;
     width: 4vw;
@@ -91,6 +91,7 @@
 
 .cnt-1 {
     width: 55%;
+    
 }
 
 .cnt-2 {
@@ -100,7 +101,7 @@
 
 .cnt-3 {
     position: absolute;
-    left: 40%;
+    left: -5%;
     transform: translateX(-40%);
     top: 60vw;
     width: 48%;
@@ -109,7 +110,7 @@
 
 .cnt-4 {
     position: absolute;
-    right: 15%;
+    right: -10%;
     transform: translateX(20%);
     top: 120vw;
     width: 49%;
@@ -118,7 +119,7 @@
 
 .cnt-5 {
     position: absolute;
-    left: 10%;
+    left: -10%;
     transform: translateX(-20%);
     top: 140vw;
     width: 38%;

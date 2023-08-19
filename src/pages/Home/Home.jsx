@@ -199,7 +199,7 @@ const Home = () => {
             ll.to("#price-img", { rotation: 90, duration: 1 })
 
             // animation
-            gsap.from(".workrow h1", {
+            gsap.from("#services.workrow h1", {
                 x: -800,
                 opacity: 0,
                 duration: 1.2,
@@ -277,6 +277,27 @@ const Home = () => {
                 ease: Expo.easeInOut,
                 scrollTrigger: {
                     trigger: ".pricing"
+                }
+            });
+            gsap.from("#imglef", {
+                x: -500,
+                opacity: 0,
+                duration: 0.8,
+                delay: 0.5,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: "#imgery"
+                }
+            });
+            gsap.from("#imgrig div", {
+                y: 700,
+                opacity: 0,
+                stagger: 0.4,
+                duration:1,
+                delay: -1,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: "#imgery"
                 }
             });
 

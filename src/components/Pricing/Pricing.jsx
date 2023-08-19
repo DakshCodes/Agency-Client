@@ -2,9 +2,45 @@ import React from 'react'
 import './Pricing.css';
 import { AiOutlineCheck } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useLayoutEffect, useRef } from 'react'
+import { gsap } from "gsap";
+import { Expo } from 'gsap/dist/gsap';
 
 const Pricing = () => {
-    return (<div className='parent-pricing'>
+    const scrollRef = React.createRef();
+    gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+
+            gsap.from(".div1", {
+                opacity: 0,
+                duration: 2,
+                delay: 1,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".div1"
+                }
+            });
+            gsap.from(".div2", {
+                x: 700,
+                opacity: 0,
+                duration: 0.7,
+                delay: 1,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".div2"
+                }
+            });
+
+        }, scrollRef);
+
+        return () => ctx.revert();
+    }, []);
+
+
+
+    return (<div className='parent-pricing' ref={scrollRef}>
         <div className='div1'>
             <h1>
                 Flexible Payment Options Tailored for <br /> Businesses of

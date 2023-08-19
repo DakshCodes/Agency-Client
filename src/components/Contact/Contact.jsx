@@ -4,6 +4,7 @@ import TextArea from 'antd/es/input/TextArea'
 import './Contact.css'
 import Spinner from '../Spinner'
 import { AddContact } from '../../apicalls/contact'
+import { Link } from 'react-router-dom'
 
 const rules = [
     {
@@ -36,6 +37,11 @@ const Contact = () => {
 
     return (<div className="contact">
         <div className="screen">
+            <Link to={'/'}>
+                <div className='back'>
+                    <i class="ri-home-4-line"></i>
+                </div>
+            </Link>
             <div className="screen-body">
                 <div className="screen-body-item">
                     <div className="app-title">
