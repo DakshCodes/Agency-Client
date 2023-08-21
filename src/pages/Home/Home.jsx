@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Home.css'
+import './Media.css'
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { Expo } from 'gsap/dist/gsap';
@@ -18,6 +19,7 @@ import { Link } from 'react-router-dom';
 import Work from '../../components/Work/Work';
 import Footer from '../../components/Footer/Footer';
 import Logo from '../../assets/logo2.svg'
+import burger from './menu.png'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
@@ -293,7 +295,7 @@ const Home = () => {
                 y: 700,
                 opacity: 0,
                 stagger: 0.4,
-                duration:1,
+                duration: 1,
                 delay: -1,
                 ease: Expo.easeInOut,
                 scrollTrigger: {
@@ -325,6 +327,10 @@ const Home = () => {
                 <div id="home">
                     <div className="page1">
                         <div id="nav">
+                            <div className="icon">
+                                <i class="ri-menu-2-line"></i>
+                                {/* <img src={burger} alt="" /> */}
+                            </div>
                             <a href="#services">Services
                                 <span id="line1" className="line"></span>
                                 <span id="line2" className="line"></span>
@@ -344,7 +350,7 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="row">
-                            <h1 className="reveal">Creative</h1>
+                            <h1 className="reveal" id='creative'>Creative</h1>
                             <div className="text">
                                 <h5 className="reveal">CURRENTLY AVAILABLE FOR</h5>
                                 <h5 className="reveal">FREELANCE WORLDWIDE</h5>
@@ -513,7 +519,7 @@ const Home = () => {
                                     </g>
                                 </svg>
                             </div>
-                            <h1 className="reveal">Developers</h1>
+                            <h1 id='developer' className="reveal">Developers</h1>
                         </div>
                         <div className="box-img">
                             <div className="button">
