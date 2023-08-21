@@ -1,0 +1,3324 @@
+@media (min-width: 1250px) and (max-width: 1450px) {
+    .parent-pricing {
+        height: 390vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(390vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 2vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 30vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 45vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 2.5vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1.4rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.9vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .8rem 2rem;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 1.1rem;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        /* border-radius: 12px; */
+        font-size: 1.9vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess2 .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .8rem 2rem;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 1rem;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 34em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1.4vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 12px;
+        font-size: 1.9vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .8rem 2rem;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 120px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 1.05rem;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+}
+
+@media (min-width: 1050px) and (max-width: 1250px) {
+    .parent-pricing {
+        height: 390vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(390vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 4vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 30vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 45vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .5vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 1vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess2 .btn {
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 1vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 34em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 12px;
+        font-size: 1.3vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 120px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 1vw;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 1vw;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1050px) {
+    .parent-pricing {
+        height: 390vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(390vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 7vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 37vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 50vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .5vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 1.3vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess2 .btn {
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 1vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 34em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 12px;
+        font-size: 1.3vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 120px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 1vw;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 1vw;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .parent-pricing {
+        height: 390vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(390vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 7vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 40vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 60vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .5vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 1.4vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.4vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess2 .btn {
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 25px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 1.4vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 15px;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 34em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 1.5vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        border-radius: 12px;
+        font-size: 1.3vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 2vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 120px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 1.4vw;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 1vw;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 700px) {
+    .parent-pricing {
+        height: 390vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(390vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 7vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 50vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 70vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.7vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .5vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 2vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 20px;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.7vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess2 .btn {
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 2vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 20px;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 40em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 4vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 3vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .8vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 70px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 2vw;
+        display: flex;
+        letter-spacing: 2.5px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 2vw;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+}
+@media (min-width: 100px) and (max-width: 560px) {
+    .parent-pricing {
+        height: 300vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 2vw;
+        /* border: 1px solid red; */
+    }
+
+    .parent-pricing .div1 {
+        /* border: 1px solid red; */
+        /* margin-top: 5vw; */
+        height: 20vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 70px;
+    }
+
+    .parent-pricing .div1 h1 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 2.5vw;
+        color: #fff;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .parent-pricing .div1 h1 span {
+        position: relative;
+        font-size: 2.5vw;
+        color: #fff;
+        font-weight: 900;
+        font-style: italic;
+        margin-left: 5px;
+        z-index: 9999;
+    }
+
+    .parent-pricing .div1 h1 span::before {
+        z-index: -1;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        height: 30%;
+        width: 100%;
+        background-color: #14CF93;
+        opacity: 0.6;
+    }
+
+
+    .parent-pricing .div2 {
+        height: calc(300vh - 20vh);
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 7vw;
+        /* align-items: center; */
+        margin-bottom: 0vw;
+
+    }
+
+    .parent-pricing .div2 .container {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 60vw;
+        background-color: #14CF93;
+        color: #000000;
+        height: 75vw;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box .title {
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+
+    .parent-pricing .div2 .container .box .title span {
+        color: #14CF93;
+        font-size: 1rem;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.7vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess .btn {
+        margin-top: 6vw;
+        /* align-items: center; */
+        /* text-align: center; */
+        padding: .5vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess .points p {
+        position: relative;
+        font-size: 2vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 20px;
+    }
+
+    .proccess .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+
+    /* Premium */
+
+
+    .parent-pricing .div2 .container .box2 {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container .box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container .box2 .title {
+        font-size: 2vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+        z-index: 1;
+    }
+
+    .parent-pricing .div2 .container .box2 .title span {
+        z-index: 1;
+        color: #14CF93;
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-left: 10px;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container .box2 .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 1.7vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess2 .btn {
+        padding: .4vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 3%;
+        left: 30%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess2 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess2 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess2 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess2 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess2 .points {
+        /* padding: 10px 0px; */
+        height: 200px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        margin-left: 25%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .proccess2 .points p {
+        position: relative;
+        font-size: 2vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 400;
+        padding: 0px 20px;
+    }
+
+    .proccess2 .points p svg {
+        font-size: 1rem;
+        /* position: absolute; */
+        margin-right: 30px;
+    }
+
+    .proccess2 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container-4 .box2 div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box2:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+
+    /*  */
+    .parent-pricing .div2 .container-4 .span {
+        position: absolute;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        top: -10px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .parent-pricing .div2 .container-4 .span::before {
+        content: 'Premium';
+        position: absolute;
+        width: 140%;
+        height: 35px;
+        background-color: #14CF93;
+        transform: rotate(-45deg) translateY(-25px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        /* color: #000000; */
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+    }
+
+    /* container-4 */
+
+
+    .parent-pricing .div2 .container-4 {
+        position: relative;
+        font-family: sans-serif;
+        /* border: 1px solid red; */
+        width: 100% !important;
+        background-color: #14CF93;
+        color: #000000;
+        height: 40em;
+        border-radius: .9rem;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        border: 3px solid #000000;
+        border-radius: 3.5rem;
+        transition: all ease .3s;
+    }
+
+    .parent-pricing .div2 .container-4 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title {
+        font-size: 4vw;
+        font-weight: 400;
+        letter-spacing: .1em;
+        text-align: center;
+        line-height: 30px;
+        margin: 25px 0px;
+    }
+
+    .parent-pricing .div2 .container-4 .box .title span {
+        color: #14CF93;
+        font-size: 1vw;
+        font-weight: 100;
+        /* letter-spacing: em */
+    }
+
+    .parent-pricing .div2 .container-4 .box .price {
+        background-color: #000000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw 0;
+        /* border-radius: 12px; */
+        font-size: 3vw;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        margin-bottom: 0vw;
+    }
+
+    .proccess-4 .btn {
+        margin-top: 5vw;
+        padding: .9vw 1vw;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 19px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .proccess-4 .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #ff6700;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .proccess-4 .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .proccess-4 .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .proccess-4 .btn:active {
+        transform: scale(0.9);
+    }
+
+    .proccess-4 .points {
+        justify-content: center;
+        gap: 40px;
+        height: 18vw;
+        width: 85vw;
+        display: flex;
+    }
+
+    .proccess-4 .points p {
+        position: relative;
+        font-size: 2.2vw;
+        display: flex;
+        letter-spacing: 2px;
+        align-items: center;
+        font-weight: 500;
+        padding: 18px 10px;
+    }
+
+    .proccess-4 .points p svg {
+        font-size: 3.5vw;
+        /* position: absolute; */
+        margin-right: 20px;
+    }
+
+    .proccess-4 {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .parent-pricing .div2 .container .box div span:nth-child(3) {
+        font-weight: 500;
+        margin-right: .2rem;
+    }
+
+    .parent-pricing .div2 .container .box:hover {
+        /* box-shadow: 0px 0px 5px 1px #fff; */
+        border: 3px solid #14CF93;
+        border-radius: 1.2rem;
+    }
+}

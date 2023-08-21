@@ -1,9 +1,10 @@
 #work-2 {
     transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    height: 210vw;
+    /* margin-top: 50vw; */
     padding-top: 150px;
     position: relative;
     width: 100%;
-    height: 210vw;
     background-color: #f2f2f2;
     /* border: 1px solid red; */
     font-family: gilroy, 'Raleway';
@@ -17,11 +18,10 @@
         width: 100%;
         height: 250vw;
         background-color: #f2f2f2;
-        /* border: 1px solid red; */
     }
 }
 
-#work-2::before {
+/* #work-2::before {
     content: "";
     top: -60px;
     position: absolute;
@@ -31,7 +31,7 @@
     background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
     background-size: cover;
 
-}
+} */
 
 
 #work-2 .workrow-2 {

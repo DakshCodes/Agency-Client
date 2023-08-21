@@ -311,7 +311,7 @@ const Home = () => {
     // scroll trigger
 
     return (
-        <>
+        <div>
             <div id="main" ref={scrollRef} >
                 <div id="loader">
                     <div id="topheading">
@@ -606,21 +606,12 @@ We deliver exceptional websites that guarantee superior results with lightning-f
                             </div>
                         </div>
                     </div>
-                    <div className='pricing'>
-                        <div className="mates" >
-                            <h1>Our Pric<span>i</span>ng<div className="mini">(🟢)</div>
-                            </h1>
-                            <img id='price-img' width="60" height="95" alt="" decoding="async" data-src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" />
-                        </div>
-                        <div className="pricing-card">
-                            <Pricing />
-                        </div>
-                    </div>
+                    <Pricing />
                     <Work />
                     <Footer />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
