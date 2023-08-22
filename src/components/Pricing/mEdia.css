@@ -3329,7 +3329,7 @@
         padding: 5vw 7vw;
     }
     .pricing .mates h1{
-        font-size: 7vw;
+        font-size: 4.6vw;
     }
     .pricing .mates img{
         width: 30px;
@@ -3421,6 +3421,7 @@
         border: 3px solid #000000;
         border-radius: 3.5rem;
         transition: all ease .3s;
+        overflow: hidden;
     }
 
     .parent-pricing .div2 .container .box {
@@ -3569,6 +3570,7 @@
         border: 3px solid #000000;
         border-radius: 3.5rem;
         transition: all ease .3s;
+        overflow: hidden;
     }
 
     .parent-pricing .div2 .container .box2 {
