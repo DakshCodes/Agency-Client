@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Contact from './components/Contact/Contact'
 import Employes from './components/Employes/Employes'
 import Footer from './components/Footer/Footer'
+import Pricing from './components/Pricing/Pricing'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/employes' element={<Employes />} />
+        <Route exact path='/pricing' element={<Pricing />} />
       </Routes>
     </BrowserRouter>
   )

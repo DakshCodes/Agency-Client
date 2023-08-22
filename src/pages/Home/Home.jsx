@@ -332,19 +332,23 @@ const Home = () => {
                                 <i class="ri-menu-2-line"></i>
                                 {/* <img src={burger} alt="" /> */}
                             </div>
-                            <a href="employes">Team
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
+                            <Link to={'/employes'}>
+                                <a href='#'>Team
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
                             <a href="#">Projects
                                 <span id="line1" className="line"></span>
                                 <span id="line2" className="line"></span>
                             </a>
                             <img className='main-logo' src={Logo} alt="" />
-                            <a href="#">Pricing
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
+                            <Link to={'/pricing'}>
+                                <a href="#">Pricing
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
                             <a href="#">Contact Us
                                 <span id="line1" className="line"></span>
                                 <span id="line2" className="line"></span>

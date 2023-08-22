@@ -7,6 +7,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { Expo } from 'gsap/dist/gsap';
+import Footer from '../Footer/Footer'
+
 
 const Pricing = () => {
     const scrollRef = React.createRef();
@@ -43,6 +45,11 @@ const Pricing = () => {
 
     return (
         <div className='pricing'>
+            <Link to={'/'}>
+                <div className='back-2'>
+                    <i class="ri-home-4-line"></i>
+                </div>
+            </Link>
             <div className="mates" >
                 <h1>Our Pric<span>i</span>ng<div className="mini">(🟢)</div>
                 </h1>
@@ -273,6 +280,7 @@ const Pricing = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

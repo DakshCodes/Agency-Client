@@ -449,8 +449,8 @@
         /* transform: translate(-50%,-50%); */
         position: absolute;
         z-index: 999;
-        width: 15vw;
-        height: 25vw;
+        width: 12vw !important;
+        height: 20vw !important;
         border-radius: 1vw;
         /* background-color: red; */
         filter: grayscale();
@@ -880,6 +880,22 @@
         width: 100%;
 
     }
+     
+    .container-moon {
+        display: none;
+        position: absolute;
+        display: inline-block;
+        top: 100%;
+        left: 40%;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        animation: rotate_3922 3s linear infinite;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+        transition: all 300ms ease-in-out;
+    }
+
 
 
     .page1 {
@@ -1753,42 +1769,16 @@
 
     }
 
-
-    .page1 {
-        height: 190vh;
-        background-color: #000000;
-        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
-        background-position: center center;
-        background-repeat: repeat;
-    }
-
-    .page1 .box-img {
-        padding: 8vw 0px;
-        width: 100%;
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: column;
-        gap: 12vw;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .page1 .box-img .img {
-        /* border: 1px solid red; */
-        margin-left: 90px;
-        z-index: 999;
-        width: 600px;
-        /* height: 701px; */
-    }
-
-
+    
     .container-moon {
+        display: none !important;
         position: absolute;
-        top: -50%;
-        left: 10%;
+        display: inline-block;
+        top: 100%;
+        left: 40%;
         border-radius: 50%;
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 30px;
         animation: rotate_3922 3s linear infinite;
         background-color: #9b59b6;
         background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
@@ -1844,9 +1834,160 @@
         }
     }
 
+    .page1 {
+        height: 190vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+    }
+
+    .page1 .box-img {
+        padding: 8vw 0px;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 12vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page1 .box-img .img {
+        /* border: 1px solid red; */
+        margin-left: 90px;
+        z-index: 999;
+        width: 600px;
+        /* height: 701px; */
+    }
+
+
+
 
 
     /*  */
+
+    #imgery {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 10vw; */
+        width: 100%;
+        height: 50vh;
+        gap: 60px;
+        height: 100vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+
+        /* border: 1px solid; */
+        padding: 7vw 7vw;
+    }
+
+    #imgery #imglef {
+        /* border: 1px solid; */
+        position: relative;
+        width: 40%;
+        height: auto;
+    }
+
+    #imglef h1 {
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 2vw;
+        color: #fff;
+        /* display: inline-block; */
+    }
+
+    #imglef h1 span {
+        font-size: 2.7vw;
+        color: #14CF93;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    #imgrig {
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 60%;
+        height: 350px;
+        /* background-color: yellow; */
+        /* height: auto; */
+    }
+
+    #imgrig .imgcntnr {
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        position: absolute;
+        z-index: 999;
+        width: 15vw;
+        height: 25vw;
+        border-radius: 1vw;
+        /* background-color: red; */
+        filter: grayscale();
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    }
+
+
+
+    #imgrig .imgcntnr span {
+        cursor: pointer;
+        --hover-shadows: 16px 16px 33px #121212,
+            -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        color: white;
+        padding: 1em 2em;
+        transition: all 300ms ease-in-out;
+    }
+
+    #imgrig .imgcntnr span:hover {
+        /* box-shadow: var(--hover-shadows); */
+        transform: scale(1.3);
+        background-color: #14CF93;
+    }
+
+
+
+    #imgrig .imgcntnr:hover {
+        filter: grayscale(0);
+    }
+
+
+    #imgrig .imgcntnr:nth-child(1) {
+        transform: translate(-90%, -0%) rotate(0deg) !important;
+        background-image: url(https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #imgrig .imgcntnr:nth-child(2) {
+        transform: translate(20%, -0%) rotate(0deg) !important;
+        background-image: url(https://images.unsplash.com/photo-1512646605205-78422b7c7896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #imgrig .imgcntnr:nth-child(3) {
+        transform: translate(130%, -2%) rotate(0deg) !important;
+        background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+    }
+
 
 
     .page1 .btn {
@@ -2131,128 +2272,6 @@
         stroke: #0ea575;
     }
 
-    #imgery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* padding-top: 10vw; */
-        width: 100%;
-        height: 50vh;
-        gap: 60px;
-        height: 100vh;
-        background-color: #000000;
-        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
-        background-position: center center;
-        background-repeat: repeat;
-
-        /* border: 1px solid; */
-        padding: 7vw 7vw;
-    }
-
-    #imgery #imglef {
-        /* border: 1px solid; */
-        position: relative;
-        width: 50%;
-        height: auto;
-    }
-
-    #imglef h1 {
-        margin-bottom: 3rem;
-        font-weight: 500;
-        letter-spacing: 1px;
-        font-size: 3vw;
-        color: #fff;
-        /* display: inline-block; */
-    }
-
-    #imglef h1 span {
-        font-size: 3.6vw;
-        color: #14CF93;
-        font-weight: 900;
-        font-style: italic;
-    }
-
-    #imgrig {
-        /* border: 1px solid; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 65%;
-        height: 350px;
-        /* background-color: yellow; */
-        /* height: auto; */
-    }
-
-    #imgrig .imgcntnr {
-        /* top: 50%; */
-        /* left: 50%; */
-        /* transform: translate(-50%,-50%); */
-        position: absolute;
-        z-index: 999;
-        width: 20vw;
-        height: 30vw;
-        border-radius: 1vw;
-        /* background-color: red; */
-        filter: grayscale();
-        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
-    }
-
-
-
-    #imgrig .imgcntnr span {
-        cursor: pointer;
-        --hover-shadows: 16px 16px 33px #121212,
-            -16px -16px 33px #303030;
-        --accent: fuchsia;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        border: none;
-        border-radius: 1.1em;
-        background-color: #212121;
-        color: white;
-        font-size: 14px;
-        padding: 0.7em 0.9em;
-        transition: all 300ms ease-in-out;
-    }
-
-    #imgrig .imgcntnr span:hover {
-        /* box-shadow: var(--hover-shadows); */
-        transform: scale(1.3);
-        background-color: #14CF93;
-    }
-
-
-
-    #imgrig .imgcntnr:hover {
-        filter: grayscale(0);
-    }
-
-
-    #imgrig .imgcntnr:nth-child(1) {
-        transform: translate(-135%, 4%) rotate(-15deg) !important;
-        background-image: url(https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
-        background-size: cover;
-        background-position: center;
-    }
-
-    #imgrig .imgcntnr:nth-child(2) {
-        transform: translate(10%, -3%) rotate(0deg) !important;
-        background-image: url(https://images.unsplash.com/photo-1512646605205-78422b7c7896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
-        background-color: yellow;
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    #imgrig .imgcntnr:nth-child(3) {
-        transform: translate(150%, 4%) rotate(15deg) !important;
-        background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
-        background-color: yellow;
-        background-size: cover;
-        background-position: center;
-    }
 
     #services {
         padding-top: 50px;
@@ -2265,7 +2284,7 @@
     }
 
     #services::before {
-        z-index:999;
+        z-index: 999;
         position: absolute;
         top: -75px;
         content: "";
@@ -2497,8 +2516,9 @@
     }
 
     .emp-btn .btn {
-        top: -78%;
-        left: 25%;
+        top: 100%;
+        transform: translate(-50%, -10%);
+        left: 50%;
         padding: 1.1em 2em;
         background: none;
         border: 2px solid #fff;
@@ -3001,6 +3021,7 @@
 
     #imgery {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         /* padding-top: 10vw; */
