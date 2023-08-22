@@ -21,6 +21,7 @@ import Footer from '../../components/Footer/Footer';
 import Logo from '../../assets/logo2.svg'
 import burger from './menu.png'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Employes from '../../components/Employes/Employes';
 
 
 const Home = () => {
@@ -331,7 +332,7 @@ const Home = () => {
                                 <i class="ri-menu-2-line"></i>
                                 {/* <img src={burger} alt="" /> */}
                             </div>
-                            <a href="#services">Services
+                            <a href="employes">Team
                                 <span id="line1" className="line"></span>
                                 <span id="line2" className="line"></span>
                             </a>
@@ -574,39 +575,6 @@ We deliver exceptional websites that guarantee superior results with lightning-f
                             </div>
                         </div>
                     </div>
-                    <div className='employes'>
-                        <div className="mates" >
-                            <h1>Our Te<span>a</span>m<div className="mini">(03)</div>
-                            </h1>
-                            <img id='emp-img' width="60" height="95" alt="" decoding="async" data-src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" />
-                        </div>
-                        <div id="imgery">
-                            <div id="imglef">
-                                <div class="container-moon">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='emp-btn'>
-                                    <Link to={'/contact'}>
-                                        <button class="btn">Let's Build A Website
-                                        </button>
-                                    </Link>
-                                </div>
-                                <h1>
-                                    Building Memorable
-                                    Digital <span> Experiences.</span>
-                                </h1>
-                            </div>
-                            <div id="imgrig">
-                                <div className="imgcntnr"><span>AMAN</span></div>
-                                <div className="imgcntnr"><span>DAKSH</span></div>
-                                <div className="imgcntnr"><span>ARJUN</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <Pricing />
                     <Work />
                     <Footer />
                 </div>

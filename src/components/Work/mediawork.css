@@ -1,0 +1,405 @@
+@media (min-width:370px) and (max-width: 560px) {
+    #work-2 {
+        transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        height: 210vw;
+        padding-top: 0px;
+        position: relative;
+        width: 100%;
+        background-color: #f2f2f2;
+        /* border: 1px solid red; */
+        font-family: gilroy, 'Raleway';
+    }
+
+    @media (min-width : 360px) and (max-width : 880px) {
+        #work-2 {
+            transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+            padding-top: 10px;
+            position: relative;
+            width: 100%;
+            height: 250vw;
+            background-color: #f2f2f2;
+        }
+    }
+
+    /* #work-2::before {
+        content: "";
+        top: -60px;
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        transform: rotate(-180deg);
+        background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+        background-size: cover;
+    
+    } */
+
+
+    #work-2 .workrow-2 {
+        padding: 0 6vw;
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .workrow-2 h1 {
+        display: flex;
+        align-items: baseline;
+        font-size: 9vw;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .workrow-2 h1 span {
+        color: #14CF93;
+        font-style: italic;
+        font-size: 5vw;
+    }
+
+    .workrow-2 img {
+        transform: rotate(135deg);
+        mix-blend-mode: exclusion;
+        width: 8vw;
+    }
+
+
+    #images {
+        margin-top: 7vw;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: 180vw;
+        /* border: 1px solid red; */
+        flex-wrap: wrap;
+        padding: 0 5vw;
+        overflow: hidden;
+    }
+
+    .cnt {
+        width: 55%;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .cnt img {
+        transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
+        width: 105%;
+    }
+
+    .cnt-1 {
+        width: 55%;
+    }
+
+    .cnt-2 {
+        width: 40%;
+        margin-right: 2vw;
+    }
+
+    .cnt-3 {
+        width: 45%;
+        margin-right: 2vw;
+    }
+
+    .cnt-4 {
+        width: 40%;
+        margin-right: 2vw;
+    }
+
+    .cnt-5 {
+        width: 45%;
+    }
+
+    #cursor {
+        position: fixed;
+        width: 14vw;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+    }
+
+    #cursor>div {
+        pointer-events: none;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        opacity: 0;
+        position: absolute;
+    }
+
+    #elem {
+        width: 100%;
+        position: relative;
+    }
+
+    #cursor .crow {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: .7vw;
+    }
+
+    .crow .ccircle {
+        width: 2vw;
+        height: 2vw;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
+    .crow .ccapsule {
+        padding: .7vw 3vw;
+        border-radius: 100px;
+        background-color: #fff;
+    }
+
+    #elem img {
+        width: 100%;
+        opacity: 0;
+        animation: an 4s linear infinite;
+        position: absolute;
+
+    }
+
+    #elem img:nth-child(2) {
+        animation-delay: 1s;
+    }
+
+    #elem img:nth-child(3) {
+        animation-delay: 2s;
+    }
+
+    #elem img:nth-child(4) {
+        animation-delay: 4s;
+    }
+
+
+    @keyframes an {
+        0% {
+            opacity: 1;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        21% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        60% {
+            opacity: 0;
+        }
+    }
+
+    /* live */
+    .live {
+        cursor: pointer;
+        position: absolute;
+        bottom: 1%;
+        left: 0%;
+        max-width: 50px;
+        height: 20px;
+        --tooltip-height: 35px;
+        --tooltip-width: 90px;
+        --gap-between-tooltip-to-live: 18px;
+        --live-color: #000000;
+        --tooltip-color: #fff;
+        background: var(--live-color);
+        live-text-align: center;
+        border-radius: 0.70em;
+        transition: background 1s;
+    }
+
+
+    .live::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #555;
+        left: calc(50% - 10px);
+        bottom: calc(100% + var(--gap-between-tooltip-to-live) - 10px);
+    }
+
+    .live::after,
+    .live::before {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 2s;
+    }
+
+    .live-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .live-wrapper,
+    .live-text,
+    .live-icon {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        color: #fff;
+    }
+
+    .live-text {
+        top: 0
+        fon
+    }
+
+    .live-text,
+    .live-icon {
+        transition: top 2s;
+    }
+
+    .live-icon {
+        color: #fff;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .live-icon i {
+        font-size: 30px;
+    }
+
+    .live:hover {
+        background: #000000;
+    }
+
+    .live:hover .live-text {
+        top: -100%;
+    }
+
+    .live:hover .live-icon {
+        top: 0;
+    }
+
+    .live:hover:before,
+    .live:hover:after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .live:hover:after {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-live) - 20px);
+    }
+
+    .live:hover:before {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-live));
+    }
+
+    .live-2 {
+        cursor: pointer;
+        position: absolute;
+        bottom: 1%;
+        right: 0%;
+        max-width: 50px;
+        height: 20px;
+        /* --tooltip-height: 35px;
+        --tooltip-width: 90px; */
+        --gap-between-tooltip-to-live: 18px;
+        --live-color: #000000;
+        --tooltip-color: #fff;
+        background: var(--live-color);
+        live-text-align: center;
+        border-radius: 0.70em;
+        transition: background 0.3s;
+    }
+
+
+    .live-2::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #555;
+        left: calc(50% - 10px);
+        bottom: calc(100% + var(--gap-between-tooltip-to-live) - 10px);
+    }
+
+    .live-2::after,
+    .live-2::before {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .live-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 10px;
+    }
+
+    .live-wrapper-2,
+    .live-text,
+    .live-icon {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        color: #fff;
+    }
+
+    .live-text {
+        top: 0
+    }
+
+    .live-text,
+    .live-icon {
+        transition: top 0.5s;
+    }
+
+    .live-icon {
+        color: #fff;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .live-icon i {
+        font-size: 20px;
+    }
+
+    .live-2:hover {
+        background: #222;
+    }
+
+    .live-2:hover .live-text {
+        top: -100%;
+    }
+
+    .live-2:hover .live-icon {
+        top: 0;
+    }
+
+    .live-2:hover:before,
+    .live-2:hover:after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .live-2:hover:after {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-live) - 20px);
+    }
+
+    .live-2:hover:before {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-live));
+    }
+}

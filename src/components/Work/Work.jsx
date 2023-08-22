@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react'
 import './Work.css'
+import './mediawork.css'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { gsap } from "gsap";
 import { Expo } from 'gsap/dist/gsap';
@@ -34,6 +35,18 @@ const Work = () => {
     const scrollRef = React.createRef();
     gsap.registerPlugin(ScrollTrigger);
     useLayoutEffect(() => {
+        gsap.set(".cnt-1", {
+            x: -80
+        })
+        gsap.set(".cnt-2", {
+            x: 80
+        })
+        gsap.set(".cnt-3", {
+            x: -80
+        })
+        gsap.set(".cnt-4", {
+            x: 80
+        })
         let ctx = gsap.context(() => {
 
             const tl = gsap.timeline({
@@ -50,7 +63,7 @@ const Work = () => {
             const tm = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".cnt-1",
-                    start: "-1-0% 10%",
+                    start: "-30% 10%",
                     end: "30% 20%",
                     scrub: 1,
                     // markers: true
@@ -68,18 +81,17 @@ const Work = () => {
             const to = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".cnt-4",
-                    start: "-10% 10%",
+                    start: "-30% 10%",
                     end: "40% 20%",
                     scrub: 1,
                     // markers: true
                 }
             });
-            tm.to(".cnt-1", { x: 80, duration: 0.1})
-            tm.to(".cnt-2", { x: -80, duration: 0.1})
-            tn.to(".cnt-3", { x:300, duration: 0.1})
-            to.to(".cnt-4", { x:-200, duration: 0.1})
-            to.to(".cnt-5", { x:200, duration: 0.1})
-        
+            tm.to(".cnt-1", { x: 20, duration: 0.1})
+            tm.to(".cnt-2", { x: -20, duration: 0.1})
+            tn.to(".cnt-3", { x:20, duration: 0.1})
+            to.to(".cnt-4", { x:-20, duration: 0.1})
+
 
 
         }, scrollRef);
@@ -132,98 +144,83 @@ const Work = () => {
                 <img id='workk' width="60" height="95" alt="" decoding="async" data-src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" />
             </div>
             <div id="images" onMouseMove={cardShow}>
-                <div className="cnt cnt-1">
-                    <img data-color="d7ddf2" data-index="0" src="https://abhishekjha.me/aeizei.7edf201c.png" alt="" />
-                    <div class="live">
-                        <div class="live-wrapper">
-                            <div class="live-text">Code</div>
-                            <span class="live-icon">
-                                <i class="ri-github-line"></i>
-                            </span>
+                <div className="div1-cnt">
+                    <div className="cnt cnt-1">
+                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <div class="live">
+                            <div class="live-wrapper">
+                                <div class="live-text">Code</div>
+                                <span class="live-icon">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="live-2">
+                            <div class="live-wrapper-2">
+                                <div class="live-text">Live</div>
+                                <span class="live-icon">
+                                    <i class="ri-live-line"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="live-2">
-                        <div class="live-wrapper-2">
-                            <div class="live-text">Live</div>
-                            <span class="live-icon">
-                                <i class="ri-live-line"></i>
-                            </span>
+                    <div className="cnt cnt-2">
+                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <div class="live">
+                            <div class="live-wrapper">
+                                <div class="live-text">Code</div>
+                                <span class="live-icon">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="cnt cnt-2">
-                    <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                    <div class="live">
-                        <div class="live-wrapper">
-                            <div class="live-text">Code</div>
-                            <span class="live-icon">
-                                <i class="ri-github-line"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="live-2">
-                        <div class="live-wrapper-2">
-                            <div class="live-text">Live</div>
-                            <span class="live-icon">
-                                <i class="ri-live-line"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="cnt cnt-3">
-                    <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                    <div class="live">
-                        <div class="live-wrapper">
-                            <div class="live-text">Code</div>
-                            <span class="live-icon">
-                                <i class="ri-github-line"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="live-2">
-                        <div class="live-wrapper-2">
-                            <div class="live-text">Live</div>
-                            <span class="live-icon">
-                                <i class="ri-live-line"></i>
-                            </span>
+                        <div class="live-2">
+                            <div class="live-wrapper-2">
+                                <div class="live-text">Live</div>
+                                <span class="live-icon">
+                                    <i class="ri-live-line"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="cnt cnt-4">
-                    <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                    <div class="live">
-                        <div class="live-wrapper">
-                            <div class="live-text">Code</div>
-                            <span class="live-icon">
-                                <i class="ri-github-line"></i>
-                            </span>
+                <div className="div2-cnt">
+                    <div className="cnt cnt-3">
+                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <div class="live">
+                            <div class="live-wrapper">
+                                <div class="live-text">Code</div>
+                                <span class="live-icon">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="live-2">
+                            <div class="live-wrapper-2">
+                                <div class="live-text">Live</div>
+                                <span class="live-icon">
+                                    <i class="ri-live-line"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="live-2">
-                        <div class="live-wrapper-2">
-                            <div class="live-text">Live</div>
-                            <span class="live-icon">
-                                <i class="ri-live-line"></i>
-                            </span>
+                    <div className="cnt cnt-4">
+                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <div class="live">
+                            <div class="live-wrapper">
+                                <div class="live-text">Code</div>
+                                <span class="live-icon">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="cnt cnt-5">
-                    <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                    <div class="live">
-                        <div class="live-wrapper">
-                            <div class="live-text">Code</div>
-                            <span class="live-icon">
-                                <i class="ri-github-line"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="live-2">
-                        <div class="live-wrapper-2">
-                            <div class="live-text">Live</div>
-                            <span class="live-icon">
-                                <i class="ri-live-line"></i>
-                            </span>
+                        <div class="live-2">
+                            <div class="live-wrapper-2">
+                                <div class="live-text">Live</div>
+                                <span class="live-icon">
+                                    <i class="ri-live-line"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
