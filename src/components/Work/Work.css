@@ -79,21 +79,14 @@
 }
 
 .div1-cnt {
-    height: 50%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-between;
-}
 
-.div2-cnt {
-    height: 50%;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
-
 .cnt {
-    width: 60%;
+    width: 70%;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -102,35 +95,45 @@
 .cnt img {
     transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .cnt-1 {
     align-self: flex-start;
-    width: 40%;
-    height: 60%;
+    width: 52%;
+    height: 20%;
+    /* border: 1px solid; */
 }
 
 .cnt-2 {
+    /* border: 1px solid; */
     align-self: flex-end;
-    width: 40%;
-    height: 60%;
+    width: 50%;
+    height: 20%;
 }
 
 .cnt-3 {
     align-self: flex-start;
-    width: 40%;
-    height: 60%;
+    /* border: 1px solid; */
+    width: 50%;
+    height: 20%;
 }
-
 .cnt-4 {
+    /* border: 1px solid; */
     align-self: flex-end;
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 20%;
 }
 
 .cnt-5 {
-    width: 40%;
+    align-self: flex-start;
+    /* border: 1px solid; */
+    width: 50%;
+    height: 20%;
 }
+
+
 
 #cursor {
     position: fixed;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import './Media.css'
 import { useLayoutEffect, useRef } from 'react'
@@ -25,6 +25,13 @@ import Employes from '../../components/Employes/Employes';
 
 
 const Home = () => {
+    const [isopen, setopen] = useState(false);
+
+    const handleClick = () => {
+        setopen(!isopen);
+    }
+
+
     const scrollRef = React.createRef();
     gsap.registerPlugin(ScrollTrigger);
     // const app = useRef();
@@ -310,10 +317,50 @@ const Home = () => {
     }, []);
 
     // scroll trigger
-
     return (
         <div>
             <div id="main" ref={scrollRef} >
+                {isopen ?
+                    <div className='xl:hidden  min-w-[85vw] bg-[#14CF93] h-[70vh]  flex flex-col  justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50  dark:bg-light/75 rounded-2xl  backdrop-blur-sm py-32 '>
+                        <nav className='flex items-center flex-col h-[90%] justify-between '>
+                            <Link to={'/employes'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Team
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+                                    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                            <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                Projects
+                                <span
+                                    className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                >&nbsp;</span>
+                            </button>
+                            <Link to={'/pricing'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Pricing
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Contact
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                        </nav>
+                    </div>
+                    : null
+                }
                 <div id="loader">
                     <div id="topheading">
                         <h5 className="reveal">Service Agency</h5>
@@ -328,10 +375,20 @@ const Home = () => {
                 <div id="home">
                     <div className="page1">
                         <div id="nav">
-                            <div className="icon">
-                                <i class="ri-menu-2-line"></i>
-                                {/* <img src={burger} alt="" /> */}
-                            </div>
+                            {
+                                !isopen ? (
+                                    <div className="icon" onClick={handleClick}>
+                                        <i class="ri-menu-2-line"></i>
+                                        {/* <img src={burger} alt="" /> */}
+                                    </div>
+                                )
+                                    : (
+                                        <div className="icon" onClick={handleClick}>
+                                            <i class="ri-close-line"></i>
+                                        </div>
+                                    )
+                            }
+
                             <Link to={'/employes'}>
                                 <a href='#'>Team
                                     <span id="line1" className="line"></span>
@@ -533,7 +590,7 @@ const Home = () => {
                                     </button>
                                 </Link>
                             </div>
-                            <div className="img">
+                            <div className="img !-z-0">
                                 <img decoding="async" src="https://danishkhan.in/wp-content/uploads/2023/06/999-min.png" class="attachment-full size-full wp-image-825" alt="" loading="lazy" srcSet="https://danishkhan.in/wp-content/uploads/2023/06/999-min.png 1305w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-300x180.png 300w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-1024x613.png 1024w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-768x460.png 768w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-650x389.png 650w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-600x359.png 600w" sizes="(max-width: 1305px) 100vw, 1305px" />
                             </div>
                         </div>

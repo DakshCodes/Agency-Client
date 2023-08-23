@@ -4,6 +4,11 @@ import './mediawork.css'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { gsap } from "gsap";
 import { Expo } from 'gsap/dist/gsap';
+import project1a from '../../assets/Projects/Projects-1.png'
+import project2a from '../../assets/Projects/Project2a.png'
+import project1b from '../../assets/Projects/Project-1a.png'
+import project1c from '../../assets/Projects/Project-1b.png'
+import project1d from '../../assets/Projects/Project-1c.png'
 
 
 const Work = () => {
@@ -47,6 +52,9 @@ const Work = () => {
         gsap.set(".cnt-4", {
             x: 80
         })
+        gsap.set(".cnt-5", {
+            x: -80
+        })
         let ctx = gsap.context(() => {
 
             const tl = gsap.timeline({
@@ -72,8 +80,8 @@ const Work = () => {
             const tn = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".cnt-3",
-                    start: "-30% 10%",
-                    end: "20% 20%",
+                    start: "-50% 10%",
+                    end: "-10% 20%",
                     scrub: 1,
                     // markers: true
                 }
@@ -87,10 +95,12 @@ const Work = () => {
                     // markers: true
                 }
             });
-            tm.to(".cnt-1", { x: 20, duration: 0.1})
-            tm.to(".cnt-2", { x: -20, duration: 0.1})
-            tn.to(".cnt-3", { x:20, duration: 0.1})
-            to.to(".cnt-4", { x:-20, duration: 0.1})
+            tm.to(".cnt-1", { x: 30, duration: 0.1 })
+            tm.to(".cnt-2", { x: -30, duration: 0.1 })
+            tn.to(".cnt-3", { x: 30, duration: 0.1 })
+            to.to(".cnt-4", { x: -30, duration: 0.1 })
+            to.to(".cnt-5", { x: 30, duration: 0.1 })
+
 
 
 
@@ -99,34 +109,82 @@ const Work = () => {
         return () => ctx.revert();
     }, []);
     function cardShow() {
+        const cursor = document.querySelector("#cursor");
+
+        if (!cursor) {
+            return; // Cursor element not found
+        }
+
+        let showingimg;
+
         document.querySelectorAll(".cnt").forEach(function (cnt) {
-            var showingimg;
             cnt.addEventListener("mousemove", function (dets) {
-                // Your mousemove logic here...
-                document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
+                const targetIndex = dets.target.dataset.index;
+
+                if (targetIndex === undefined) {
+                    return; // No dataset index, skip
+                }
+
+                const cursorChild = cursor.children[targetIndex];
+                console.log(cursorChild)
+                if (cursorChild) {
+                    cursorChild.style.opacity = 1;
+                    cursorChild.style.transform = `translate(${dets.clientX}px,${dets.clientY - 30}px)`;
+                }
+
                 showingimg = dets.target;
-                document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px,${dets.clientY - 30}px)`;
-                showingimg.style.filter = 'grayscale(1)'
+                showingimg.style.filter = 'grayscale(1)';
                 document.querySelector("#work").style.backgroundColor = "#" + dets.target.dataset.color;
             });
-            cnt.addEventListener("mouseleave", function (dets) {
-                // Your mouseleave logic here...
-                document.querySelector("#cursor").children[showingimg.dataset.index].style.opacity = 0;
-                showingimg.style.filter = 'grayscale(0)'
-                document.querySelector("#work").style.backgroundColor = "#fff";
+
+            cnt.addEventListener("mouseleave", function () {
+                cnt.addEventListener("mouseleave", function () {
+                    if (showingimg) {
+                        const targetIndex = showingimg.dataset.index;
+                        if (targetIndex !== undefined) {
+                            const cursorChild = cursor.children[targetIndex];
+                            if (cursorChild) {
+                                cursorChild.style.opacity = 0;
+                            }
+                        }
+
+                        showingimg.style.filter = 'grayscale(0)';
+                        document.querySelector("#work").style.backgroundColor = "#fff";
+                    }
+                });
             });
+
             // Rest of your code...
         });
 
         // Move these outside the loop if they are not intended to be inside each .cnt element
         document.querySelector(".live").addEventListener("mousemove", () => {
-            // Your mousemove logic...
-            document.querySelector("#cursor").children[showingimg.dataset.index].style.opacity = 0;
+            if (showingimg) {
+                const targetIndex = showingimg.dataset.index;
+                if (targetIndex === undefined) {
+                    return; // No dataset index, skip
+                }
+
+                const cursorChild = cursor.children[targetIndex];
+                if (cursorChild) {
+                    cursorChild.style.opacity = 0;
+                }
+            }
         });
+
         document.querySelectorAll(".live-2").forEach((elem) => {
             elem.addEventListener("mousemove", () => {
-                // Your mousemove logic...
-                document.querySelector("#cursor").children[showingimg.dataset.index].style.opacity = 0;
+                if (showingimg) {
+                    const targetIndex = showingimg.dataset.index;
+                    if (targetIndex === undefined) {
+                        return; // No dataset index, skip
+                    }
+
+                    const cursorChild = cursor.children[targetIndex];
+                    if (cursorChild) {
+                        cursorChild.style.opacity = 0;
+                    }
+                }
             });
         });
     }
@@ -146,47 +204,53 @@ const Work = () => {
             <div id="images" onMouseMove={cardShow}>
                 <div className="div1-cnt">
                     <div className="cnt cnt-1">
-                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <div class="live">
-                            <div class="live-wrapper">
-                                <div class="live-text">Code</div>
-                                <span class="live-icon">
-                                    <i class="ri-github-line"></i>
-                                </span>
+                        <img data-color="bae0d4" data-index="0" src={project1a} alt="" />
+                        <a href='https://github.com/DakshCodes/Faimly-Circle-Client' target={'_blank'}>
+                            <div class="live">
+                                <div class="live-wrapper">
+                                    <div class="live-text">Code</div>
+                                    <span class="live-icon">
+                                        <i class="ri-github-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="live-2">
-                            <div class="live-wrapper-2">
-                                <div class="live-text">Live</div>
-                                <span class="live-icon">
-                                    <i class="ri-live-line"></i>
-                                </span>
+                        </a>
+                        <a target={"_blank"} href="https://faimly-circle-client.vercel.app/" >
+                            <div class="live-2">
+                                <div class="live-wrapper-2">
+                                    <div class="live-text">Live</div>
+                                    <span class="live-icon">
+                                        <i class="ri-live-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div className="cnt cnt-2">
-                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <div class="live">
-                            <div class="live-wrapper">
-                                <div class="live-text">Code</div>
-                                <span class="live-icon">
-                                    <i class="ri-github-line"></i>
-                                </span>
+                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
+                        <a href='https://github.com/DakshCodes/Watch-Page-DC' target={'_blank'}>
+                            <div class="live">
+                                <div class="live-wrapper">
+                                    <div class="live-text">Code</div>
+                                    <span class="live-icon">
+                                        <i class="ri-github-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="live-2">
-                            <div class="live-wrapper-2">
-                                <div class="live-text">Live</div>
-                                <span class="live-icon">
-                                    <i class="ri-live-line"></i>
-                                </span>
+                        </a>
+                        <a target={"_blank"} href="https://watch-page-dc.vercel.app/" >
+                            <div class="live-2">
+                                <div class="live-wrapper-2">
+                                    <div class="live-text">Live</div>
+                                    <span class="live-icon">
+                                        <i class="ri-live-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div className="div2-cnt">
                     <div className="cnt cnt-3">
-                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
                         <div class="live">
                             <div class="live-wrapper">
                                 <div class="live-text">Code</div>
@@ -205,7 +269,26 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="cnt cnt-4">
-                        <img data-color="bae0d4" data-index="1" src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
+                        <div class="live">
+                            <div class="live-wrapper">
+                                <div class="live-text">Code</div>
+                                <span class="live-icon">
+                                    <i class="ri-github-line"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="live-2">
+                            <div class="live-wrapper-2">
+                                <div class="live-text">Live</div>
+                                <span class="live-icon">
+                                    <i class="ri-live-line"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="cnt cnt-5">
+                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
                         <div class="live">
                             <div class="live-wrapper">
                                 <div class="live-text">Code</div>
@@ -230,30 +313,26 @@ const Work = () => {
                     <div className="crow">
                         <div className="ccircle"></div>
                         <div className="ccapsule">
-                            Behance
+                            FaimlyCircle
                         </div>
                     </div>
                     <div id="elem">
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <img src={project1a} alt="" />
+                        <img src={project1b} alt="" />
+                        <img src={project1c} alt="" />
+                        <img src={project1d} alt="" />
                     </div>
                 </div>
                 <div>
                     <div className="crow">
                         <div className="ccircle"></div>
                         <div className="ccapsule">
-                            Behance
+                            MoonWatch
                         </div>
                     </div>
                     <div id="elem">
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
-                        <img src="https://abhishekjha.me/display.835f9d62.png" alt="" />
+                        <img src={project2a} alt="" />
+                        <img src={project2a} alt="" />
                     </div>
                 </div>
             </div>
