@@ -406,10 +406,12 @@ const Home = () => {
                                     <span id="line2" className="line"></span>
                                 </a>
                             </Link>
-                            <a href="#">Contact Us
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
+                            <Link to={'/contact'}>
+                                <a href="#">Contact Us
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
                         </div>
                         <div className="row">
                             <h1 className="reveal" id='creative'>Creative</h1>

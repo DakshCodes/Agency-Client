@@ -90,8 +90,16 @@ const Employes = () => {
                         </h1>
                     </div>
                     <div id="imgrig">
-                        <div className="imgcntnr"><span>AMAN</span></div>
-                        <div className="imgcntnr"><span>DAKSH</span></div>
+                        <div className="imgcntnr">
+                            <Link to={"https://aman-bairagi-portfolio.vercel.app/"} target="_blank">
+                                <span>AMAN</span>
+                            </Link>
+                        </div>
+                        <div className="imgcntnr">
+                            <Link to={"https://portfolio-main-dc-lk5q.vercel.app/"} target="_blank">
+                                <span>DAKSH</span>
+                            </Link>
+                        </div>
                         <div className="imgcntnr"><span>ARJUN</span></div>
                     </div>
                 </div>

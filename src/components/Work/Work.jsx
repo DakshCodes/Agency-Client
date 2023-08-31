@@ -9,6 +9,10 @@ import project2a from '../../assets/Projects/Project2a.png'
 import project1b from '../../assets/Projects/Project-1a.png'
 import project1c from '../../assets/Projects/Project-1b.png'
 import project1d from '../../assets/Projects/Project-1c.png'
+import project3a from '../../assets/Projects/Project-3a.jpg'
+import project3b from '../../assets/Projects/Project-3b.jpg'
+import project3c from '../../assets/Projects/Project-3c.jpg'
+import project3d from '../../assets/Projects/Project-3d.jpg'
 
 
 const Work = () => {
@@ -227,8 +231,8 @@ const Work = () => {
                         </a>
                     </div>
                     <div className="cnt cnt-2">
-                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
-                        <a href='https://github.com/DakshCodes/Watch-Page-DC' target={'_blank'}>
+                        <img data-color="bae0d4" data-index="1" src={project3d} alt="" />
+                        <a href='https://github.com/amanbairagi30/ecomm-react' target={'_blank'}>
                             <div class="live">
                                 <div class="live-wrapper">
                                     <div class="live-text">Code</div>
@@ -238,7 +242,7 @@ const Work = () => {
                                 </div>
                             </div>
                         </a>
-                        <a target={"_blank"} href="https://watch-page-dc.vercel.app/" >
+                        <a target={"_blank"} href="https://ecomm-react-new.onrender.com/admin">
                             <div class="live-2">
                                 <div class="live-wrapper-2">
                                     <div class="live-text">Live</div>
@@ -250,45 +254,7 @@ const Work = () => {
                         </a>
                     </div>
                     <div className="cnt cnt-3">
-                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
-                        <div class="live">
-                            <div class="live-wrapper">
-                                <div class="live-text">Code</div>
-                                <span class="live-icon">
-                                    <i class="ri-github-line"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="live-2">
-                            <div class="live-wrapper-2">
-                                <div class="live-text">Live</div>
-                                <span class="live-icon">
-                                    <i class="ri-live-line"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="cnt cnt-4">
-                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
-                        <div class="live">
-                            <div class="live-wrapper">
-                                <div class="live-text">Code</div>
-                                <span class="live-icon">
-                                    <i class="ri-github-line"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="live-2">
-                            <div class="live-wrapper-2">
-                                <div class="live-text">Live</div>
-                                <span class="live-icon">
-                                    <i class="ri-live-line"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="cnt cnt-5">
-                        <img data-color="bae0d4" data-index="1" src={project2a} alt="" />
+                        <img data-color="bae0d4" data-index="2" src={project2a} alt="" />
                         <div class="live">
                             <div class="live-wrapper">
                                 <div class="live-text">Code</div>
@@ -321,6 +287,19 @@ const Work = () => {
                         <img src={project1b} alt="" />
                         <img src={project1c} alt="" />
                         <img src={project1d} alt="" />
+                    </div>
+                </div>
+                <div>
+                    <div className="crow">
+                        <div className="ccircle"></div>
+                        <div className="ccapsule">
+                           Ecomme
+                        </div>
+                    </div>
+                    <div id="elem">
+                        <img src={project3a} alt="" />
+                        <img src={project3b} alt="" />
+                        <img src={project3c} alt="" />
                     </div>
                 </div>
                 <div>

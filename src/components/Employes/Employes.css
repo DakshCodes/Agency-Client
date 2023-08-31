@@ -1,5 +1,5 @@
 .employes {
-    height: 120vh !important;
+    height: 115vh !important;
 }
 
 #imgery {
@@ -60,8 +60,8 @@
     /* transform: translate(-50%,-50%); */
     position: absolute;
     z-index: 999;
-    width: 20vw;
-    height: 30vw;
+    width: 15vw;
+    height: 25vw;
     border-radius: 1vw;
     /* background-color: red; */
     filter: grayscale();
@@ -99,15 +99,18 @@
 
 
 #imgrig .imgcntnr:nth-child(1) {
-    transform: translate(-75%, -5%) rotate(-10deg);
-    background-image: url(https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    border: 1px solid #fff;
+    transform: translate(-120%, -7%) rotate(0deg) !important;
+    background-image: url('../../assets/team/aman.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 #imgrig .imgcntnr:nth-child(2) {
-    /* transform: translate(-15%, -0%) rotate(-15deg); */
-    background-image: url(https://images.unsplash.com/photo-1512646605205-78422b7c7896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    border: 1px solid #fff;
+    transform: translate(0%, -5%) rotate(0deg) !important;
+    background-image: url('../../assets/team/daksh.jpg');
     background-color: yellow;
     background-size: cover;
     background-position: center;
@@ -115,8 +118,9 @@
 }
 
 #imgrig .imgcntnr:nth-child(3) {
-    transform: translate(70%, -2%) rotate(10deg);
-    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=415&q=80);
+    border: 1px solid #fff;
+    transform: translate(120%, -7%) rotate(-0deg) !important;
+    background-image: url('../../assets/team/arjun.jpg');
     background-color: yellow;
     background-size: cover;
     background-position: center;
