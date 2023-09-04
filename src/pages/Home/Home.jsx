@@ -22,9 +22,15 @@ import Logo from '../../assets/logo2.svg'
 import burger from './menu.png'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Employes from '../../components/Employes/Employes';
+import ReactGA from "react-ga";
 
 
 const Home = () => {
+
+    useEffect(()=>{
+        ReactGA.pageview(window.location.pathname);
+    },[])
+
     const [isopen, setopen] = useState(false);
 
     const handleClick = () => {
