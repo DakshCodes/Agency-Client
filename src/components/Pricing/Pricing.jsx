@@ -75,7 +75,7 @@ const Pricing = () => {
                                     </span>
                                 </h1>
                                 <div className="price">
-                                    <span>₹ 1500/hour</span>
+                                    <span>₹249/hour</span>
                                 </div>
                                 <div className="proccess">
                                     <div className="points">
@@ -101,7 +101,7 @@ const Pricing = () => {
                                         </p>
                                         <p>
                                             <AiOutlineCheck />
-                                            Cost Effective
+                                            Data Feeding
                                         </p>
                                     </div>
                                     <Link to={'/contact'}>
@@ -136,7 +136,7 @@ const Pricing = () => {
                                         </p>
                                         <p>
                                             <AiOutlineCheck />
-                                            Unlimited Products or services
+                                             Products or services
                                         </p>
                                         <p>
                                             <AiOutlineCheck />

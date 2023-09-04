@@ -13,6 +13,11 @@ import project3a from '../../assets/Projects/Project-3a.jpg'
 import project3b from '../../assets/Projects/Project-3b.jpg'
 import project3c from '../../assets/Projects/Project-3c.jpg'
 import project3d from '../../assets/Projects/Project-3d.jpg'
+import project4a from '../../assets/Projects/Project-4a.png'
+import project4b from '../../assets/Projects/Project-4b.png'
+import project4c from '../../assets/Projects/Project-4c.png'
+import project4d from '../../assets/Projects/Project-4d.png'
+import project4e from '../../assets/Projects/Project-4e.png'
 
 
 const Work = () => {
@@ -252,25 +257,52 @@ const Work = () => {
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div>                
                     <div className="cnt cnt-3">
+                        <img data-color="bae0d4" data-index="3" src={project4a} alt="" />
+                        <a href='https://github.com/DakshCodes/TechPedia-Client' target={'_blank'}>
+                            <div class="live">
+                                <div class="live-wrapper">
+                                    <div class="live-text">Code</div>
+                                    <span class="live-icon">
+                                        <i class="ri-github-line"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a target={"_blank"} href="https://techpedia.vercel.app/">
+                            <div class="live-2">
+                                <div class="live-wrapper-2">
+                                    <div class="live-text">Live</div>
+                                    <span class="live-icon">
+                                        <i class="ri-live-line"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="cnt cnt-4">
                         <img data-color="bae0d4" data-index="2" src={project2a} alt="" />
-                        <div class="live">
-                            <div class="live-wrapper">
-                                <div class="live-text">Code</div>
-                                <span class="live-icon">
-                                    <i class="ri-github-line"></i>
-                                </span>
+                        <a href='https://github.com/DakshCodes/Watch-Page-DC' target={'_blank'}>
+                            <div class="live">
+                                <div class="live-wrapper">
+                                    <div class="live-text">Code</div>
+                                    <span class="live-icon">
+                                        <i class="ri-github-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="live-2">
-                            <div class="live-wrapper-2">
-                                <div class="live-text">Live</div>
-                                <span class="live-icon">
-                                    <i class="ri-live-line"></i>
-                                </span>
+                        </a>
+                        <a target={"_blank"} href="https://watch-page-dc.vercel.app/">
+                            <div class="live-2">
+                                <div class="live-wrapper-2">
+                                    <div class="live-text">Live</div>
+                                    <span class="live-icon">
+                                        <i class="ri-live-line"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -293,7 +325,7 @@ const Work = () => {
                     <div className="crow">
                         <div className="ccircle"></div>
                         <div className="ccapsule">
-                           Ecomme
+                            Ecomme
                         </div>
                     </div>
                     <div id="elem">
@@ -312,6 +344,21 @@ const Work = () => {
                     <div id="elem">
                         <img src={project2a} alt="" />
                         <img src={project2a} alt="" />
+                    </div>
+                </div>
+                <div>
+                    <div className="crow">
+                        <div className="ccircle"></div>
+                        <div className="ccapsule">
+                            TechPedia
+                        </div>
+                    </div>
+                    <div id="elem">
+                        <img src={project4a} alt="" />
+                        <img src={project4b} alt="" />
+                        <img src={project4c} alt="" />
+                        <img src={project4d} alt="" />
+                        <img src={project4e} alt="" />
                     </div>
                 </div>
             </div>

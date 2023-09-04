@@ -309,6 +309,157 @@ ul {
     }
     
 }
+@media (min-width:200px) and (max-width: 370px) {
+    .footer {
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        height: 300px;
+        
+        padding: 40px 0px !important;
+        text-align: left;
+        display: flex;
+    }
+    
+    .wave {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url("https://i.ibb.co/wQZVxxk/wave.png");
+        background-size: 1000px 100px;
+    }
+    
+    .wave#wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWaves 4s linear infinite;
+    }
+    
+    .wave#wave2 {
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animate 4s linear infinite !important;
+    }
+    
+    .wave#wave3 {
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWaves 3s linear infinite;
+    }
+    
+    .wave#wave4 {
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animate 3s linear infinite;
+    }
+    
+    @keyframes animateWaves {
+        0% {
+            background-position-x: 1000px;
+        }
+    
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+    
+    @keyframes animate {
+        0% {
+            background-position-x: -1000px;
+        }
+    
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+    
+    .container-footer {
+        width: 80% !important;
+    }
+    
+    .row-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    
+    .footer-col {
+        width: 30%;
+        padding: 0 40px;
+    }
+    
+    .footer-col h4 {
+        font-size: 10px;
+        width: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background-color: #14CF93;
+        height: 4px;
+        box-sizing: border-box;
+        width: 40px;
+    }
+    
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+        font-size: 10px;
+        text-transform: capitalize;
+        /* color: #fff; */
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 10px;
+    }
+    
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    
+    .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+}
 @media (min-width:440px) and (max-width: 800px){
      .footer {
         position: relative;
