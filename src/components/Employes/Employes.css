@@ -53,6 +53,11 @@
     /* background-color: yellow; */
     /* height: auto; */
 }
+#imgrig h1{
+    font-weight: 800;
+    font-size: 3vw;
+    color: #fff;
+}
 
 #imgrig .imgcntnr {
     /* top: 50%; */

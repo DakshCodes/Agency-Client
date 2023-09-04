@@ -21,7 +21,7 @@
     }
 
     .employes {
-        height: 200vh !important;
+        height: 150vh !important;
         background-color: #000000;
         background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
         background-position: center center;
@@ -101,7 +101,7 @@
         /* padding-top: 10vw; */
         width: 100%;
         gap: 60px;
-        height: 200vh;
+        height: 150vh;
         background-color: #000000;
         background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
         background-position: center center;
@@ -343,7 +343,7 @@
     }
 
     .employes {
-        height: 250vh !important;
+        height: 150vh !important;
         background-color: #000000;
         background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
         background-position: center center;
@@ -418,12 +418,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 40vw !important;
+        gap: 0vw !important;
         align-items: center;
         /* padding-top: 10vw; */
         width: 100%;
         gap: 60px;
-        height: 200vh;
+        height: 150vh;
         background-color: #000000;
         background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
         background-position: center center;

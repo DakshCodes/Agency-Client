@@ -90,7 +90,8 @@ const Employes = () => {
                         </h1>
                     </div>
                     <div id="imgrig">
-                        <div className="imgcntnr">
+                    <h1>Employes Card Coming Soon ?</h1>
+                        {/* <div className="imgcntnr">
                             <Link to={"https://aman-bairagi-portfolio.vercel.app/"} target="_blank">
                                 <span>AMAN</span>
                             </Link>
@@ -100,7 +101,7 @@ const Employes = () => {
                                 <span>DAKSH</span>
                             </Link>
                         </div>
-                        <div className="imgcntnr"><span>ARJUN</span></div>
+                        <div className="imgcntnr"><span>ARJUN</span></div> */}
                     </div>
                 </div>
             </div>
