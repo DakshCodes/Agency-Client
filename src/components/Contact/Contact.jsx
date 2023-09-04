@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
             </div>
             <section className='text-white flex py-4'>
-                <article className='m-auto w-[70%] h-[90%] bg-[#171717] p-2 '>
+                <article className='m-auto w-[90%] h-[90%] bg-[#171717] p-2 '>
                     <div className="m-auto flex flex-col text-white  px-4">
                         <Form
                             layout="vertical"

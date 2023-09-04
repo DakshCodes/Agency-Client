@@ -106,7 +106,7 @@
 #imgrig .imgcntnr:nth-child(1) {
     border: 1px solid #fff;
     transform: translate(-120%, -7%) rotate(0deg) !important;
-    background-image: url('../../assets/team/aman.png');
+    background-image: url('../../assets/team/aman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
