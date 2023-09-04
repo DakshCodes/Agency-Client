@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
+import './Media.css'
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { Expo } from 'gsap/dist/gsap';
@@ -17,11 +18,28 @@ import Contact from '../../components/Contact/Contact';
 import { Link } from 'react-router-dom';
 import Work from '../../components/Work/Work';
 import Footer from '../../components/Footer/Footer';
+import Logo from '../../assets/logo2.svg'
+import burger from './menu.png'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Employes from '../../components/Employes/Employes';
+import ReactGA from "react-ga";
 
 
 const Home = () => {
-    const scrollRef = React.createRef();
 
+    useEffect(()=>{
+        ReactGA.pageview(window.location.pathname);
+    },[])
+
+    const [isopen, setopen] = useState(false);
+
+    const handleClick = () => {
+        setopen(!isopen);
+    }
+
+
+    const scrollRef = React.createRef();
+    gsap.registerPlugin(ScrollTrigger);
     // const app = useRef();
     function revealToSpa() {
         document.querySelectorAll(".reveal")
@@ -44,6 +62,7 @@ const Home = () => {
     }
     function valuesetter() {
         gsap.set("#nav a", { y: "-100%", opacity: 0 })
+        gsap.set(".main-logo", { opacity: 0 })
         gsap.set("#home span .child", {
             y: "100%"
         })
@@ -62,7 +81,7 @@ const Home = () => {
 
         tl
             .from(" #loader .child span", {
-                x: 100,
+                x: 350,
                 stagger: .2,
                 duration: 1,
                 ease: Expo.easeInOut
@@ -131,6 +150,11 @@ const Home = () => {
                 stagger: .09,
                 delay: -2,
                 ease: Expo.easeInOut,
+            }).to(".main-logo", {
+                opacity: 1,
+                delay: -1.4,
+                duration: 3,
+                ease: Expo.easeInOut,
                 onComplete: function () {
                     animateSvg();
                 }
@@ -159,47 +183,244 @@ const Home = () => {
             revealToSpa();
             valuesetter();
             loaderanimation();
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".workrow img",
+                    start: "-380% 20%",
+                    end: "10% 20%",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+            tl.to(".workrow img", { rotation: 90, duration: 1 })
+            const gl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#emp-img",
+                    start: "-380% 20%",
+                    end: "10% 20%",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+            gl.to("#emp-img", { rotation: 90, duration: 1 })
+            const ll = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#price-img",
+                    start: "-380% 20%",
+                    end: "10% 20%",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+            ll.to("#price-img", { rotation: 90, duration: 1 })
+
+            // animation
+            gsap.from("#services.workrow h1", {
+                x: -800,
+                opacity: 0,
+                duration: 1.2,
+                // delay: -2,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".workrow"
+                }
+            });
+            gsap.from(".employes .mates h1", {
+                x: -800,
+                opacity: 0,
+                duration: 1.2,
+                // delay: -2,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".employes"
+                }
+            });
+            // gsap.from(".pricing .mates h1", {
+            //     x: -800,
+            //     opacity: 0,
+            //     duration: 1.2,
+            //     // delay: -2,
+            //     ease: Expo.easeInOut,
+            //     scrollTrigger: {
+            //         trigger: ".pricing"
+            //     }
+            // });
+            gsap.from(".services-cards .div3 h1", {
+                opacity: 0,
+                y: 700,
+                duration: 1.5,
+                // delay: -2,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".workrow"
+                }
+            });
+            gsap.from(".btn-serv", {
+                opacity: 0,
+                duration: 4,
+                // delay: -2,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".workrow"
+                }
+            });
+            gsap.from(".services-1", {
+                opacity: 0,
+                x: 700,
+                duration: 0.7,
+                stagger: 4,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".workrow"
+                }
+            });
+            gsap.from(".services-2", {
+                opacity: 0,
+                duration: 0.7,
+                delay: 1,
+                y: -700,
+                stagger: 3,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".workrow"
+                }
+            });
+            gsap.from(".pricing .mates", {
+                x: -800,
+                opacity: 0,
+                duration: 1.2,
+                // delay: -2,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: ".pricing"
+                }
+            });
+            gsap.from("#imglef", {
+                x: -500,
+                opacity: 0,
+                duration: 0.8,
+                delay: 0.5,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: "#imgery"
+                }
+            });
+            gsap.from("#imgrig div", {
+                y: 700,
+                opacity: 0,
+                stagger: 0.4,
+                duration: 1,
+                delay: -1,
+                ease: Expo.easeInOut,
+                scrollTrigger: {
+                    trigger: "#imgery"
+                }
+            });
 
         }, scrollRef);
 
         return () => ctx.revert();
     }, []);
 
+    // scroll trigger
     return (
-        <>
-
+        <div>
             <div id="main" ref={scrollRef} >
+                {isopen ?
+                    <div className='xl:hidden  min-w-[85vw] bg-[#14CF93] h-[70vh]  flex flex-col  justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50  dark:bg-light/75 rounded-2xl  backdrop-blur-sm py-32 '>
+                        <nav className='flex items-center flex-col h-[90%] justify-between '>
+                            <Link to={'/employes'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Team
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+                                    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                            <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                Projects
+                                <span
+                                    className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                >&nbsp;</span>
+                            </button>
+                            <Link to={'/pricing'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Pricing
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <button className={` relative group text-4xl font-semibold hover:border-[#000000] transition-all duration-500 ease-in-out border-b-4 border-[#14CF93] dark:text-dark my-2 text-[#fff]`} onClick={handleClick}>
+                                    Contact
+                                    <span
+                                        className={`h-[2px] inline-block bg-light  dark:bg-black absolute left-0 -bottom-0.5
+    group-hover:w-full transition-[width] ease duration-300 `}
+                                    >&nbsp;</span>
+                                </button>
+                            </Link>
+                        </nav>
+                    </div>
+                    : null
+                }
                 <div id="loader">
                     <div id="topheading">
                         <h5 className="reveal">Service Agency</h5>
                         <h5 className="reveal">&copy; 2023</h5>
                     </div>
-                    <h1 className="reveal"><span>Plodbit</span> <span className="singh">Team</span> <span>is</span> <span>a</span></h1>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.37 78.37"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(0 59.42)">value</text><text class="cls-1" transform="translate(196.68 59.42)">Labs</text><text class="cls-2" transform="translate(144.03 59.42) scale(1.56 1)">X</text></g></g></svg> */}
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 805.88 501.15"><defs><style>.cls-1{"fill:#fff;"}.cls-2{"fill:#47bb8d;"}</style></defs><title>valuexlabs logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="0 501.15 138.18 262.98 227.86 435.21 195.99 501.15 0 501.15" /><polygon class="cls-1" points="805.88 501.15 667.7 262.98 578.02 435.21 609.89 501.15 805.88 501.15" /><path class="cls-2" d="M695.88,2.33a46.08,46.08,0,0,1-3.73,4.23L438.47,260.25a46.25,46.25,0,0,1-65.39,0h0l-.17-.18-.17-.16-97.83-97.83a46.23,46.23,0,0,1,0-65.39h0a46.23,46.23,0,0,1,65.39,0l55.42,55.42a14.21,14.21,0,0,0,20.1,0L567.93,0H117.63a36,36,0,0,0-32,52.48l207.49,403.3a83.62,83.62,0,0,0,74.36,45.37h73.47a83.62,83.62,0,0,0,74.94-46.51L715.34,52A36,36,0,0,0,695.88,2.33Z" /></g></g></svg> */}
+                    <h1 className="reveal"><span>Value</span><span className="singh">X</span><span>is</span> <span>a</span></h1>
                 </div>
                 <div id="green"></div>
                 <div id="blue"></div>
                 <div id="home">
                     <div className="page1">
                         <div id="nav">
-                            <a href="#">Services
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
+                            {
+                                !isopen ? (
+                                    <div className="icon" onClick={handleClick}>
+                                        <i class="ri-menu-2-line"></i>
+                                        {/* <img src={burger} alt="" /> */}
+                                    </div>
+                                )
+                                    : (
+                                        <div className="icon" onClick={handleClick}>
+                                            <i class="ri-close-line"></i>
+                                        </div>
+                                    )
+                            }
+
+                            <Link to={'/employes'}>
+                                <a href='#'>Team
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
                             <a href="#">Projects
                                 <span id="line1" className="line"></span>
                                 <span id="line2" className="line"></span>
                             </a>
-                            <a href="#">Pricing
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
-                            <a href="#">Contact Us
-                                <span id="line1" className="line"></span>
-                                <span id="line2" className="line"></span>
-                            </a>
+                            <img className='main-logo' src={Logo} alt="" />
+                            <Link to={'/pricing'}>
+                                <a href="#">Pricing
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
+                            <Link to={'/contact'}>
+                                <a href="#">Contact Us
+                                    <span id="line1" className="line"></span>
+                                    <span id="line2" className="line"></span>
+                                </a>
+                            </Link>
                         </div>
                         <div className="row">
-                            <h1 className="reveal">Creative</h1>
+                            <h1 className="reveal" id='creative'>Creative</h1>
                             <div className="text">
                                 <h5 className="reveal">CURRENTLY AVAILABLE FOR</h5>
                                 <h5 className="reveal">FREELANCE WORLDWIDE</h5>
@@ -368,7 +589,7 @@ const Home = () => {
                                     </g>
                                 </svg>
                             </div>
-                            <h1 className="reveal">Developers</h1>
+                            <h1 id='developer' className="reveal">Developers</h1>
                         </div>
                         <div className="box-img">
                             <div className="button">
@@ -377,7 +598,7 @@ const Home = () => {
                                     </button>
                                 </Link>
                             </div>
-                            <div className="img">
+                            <div className="img !-z-0">
                                 <img decoding="async" src="https://danishkhan.in/wp-content/uploads/2023/06/999-min.png" class="attachment-full size-full wp-image-825" alt="" loading="lazy" srcSet="https://danishkhan.in/wp-content/uploads/2023/06/999-min.png 1305w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-300x180.png 300w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-1024x613.png 1024w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-768x460.png 768w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-650x389.png 650w, https://danishkhan.in/wp-content/uploads/2023/06/999-min-600x359.png 600w" sizes="(max-width: 1305px) 100vw, 1305px" />
                             </div>
                         </div>
@@ -405,71 +626,29 @@ const Home = () => {
                                         </span>
                                     </h1>
                                 </div>
-                                <div>
+                                <div className='btn-serv'>
                                     <Link to={'/contact'}>
                                         <button class="btn">Let's Build A Website
                                         </button>
                                     </Link>
                                 </div>
                             </div>
-                            <div className="div1">
-                                <Services img={img1} title="Product Development" desc="High Performance
+                            <div className="div1 services-1">
+                                <Services class="card-1" img={img1} title="Product Development" desc="High Performance
 We deliver exceptional websites that guarantee superior results with lightning-fast speed and flawless functionality." />
-                                <Services img={img3} title="Custom-Code Expertise" desc="We bring your unique ideas to life with unmatched precision, offering dedicated support and cutting-edge coding solutions that set your website apart." />
+                                <Services class="card-1" img={img3} title="Custom-Code Expertise" desc="We bring your unique ideas to life with unmatched precision, offering dedicated support and cutting-edge coding solutions that set your website apart." />
                             </div>
-                            <div className="div2">
-                                <Services img={img2} title="Designing" desc="Our transformative designs revolutionize user experiences, creating intuitive and visually stunning interfaces that drive unmatched satisfaction and conversions." />
-                                <Services img={img4} title="Free Training" desc="We equip you with the knowledge and skills to confidently manage and update your website, putting you in control of your online success." />
+                            <div className="div2 services-2">
+                                <Services class="card-1" img={img2} title="Designing" desc="Our transformative designs revolutionize user experiences, creating intuitive and visually stunning interfaces that drive unmatched satisfaction and conversions." />
+                                <Services class="card-1" img={img4} title="Free Training" desc="We equip you with the knowledge and skills to confidently manage and update your website, putting you in control of your online success." />
                             </div>
-                        </div>
-                    </div>
-                    <div className='employes'>
-                        <div className="mates" >
-                            <h1>Our Te<span>a</span>m<div className="mini">(03)</div>
-                            </h1>
-                            <img width="60" height="95" alt="" decoding="async" data-src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" />
-                        </div>
-                        <div id="imgery">
-                            <div id="imglef">
-                                <div class="container-moon">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div className='emp-btn'>
-                                    <Link to={'/contact'}>
-                                        <button class="btn">Let's Build A Website
-                                        </button>
-                                    </Link>
-                                </div>
-                                <h1>
-                                    Building Memorable
-                                    Digital <span> Experiences.</span>
-                                </h1>
-                            </div>
-                            <div id="imgrig">
-                                <div className="imgcntnr"><span>AMAN</span></div>
-                                <div className="imgcntnr"><span>DAKSH</span></div>
-                                <div className="imgcntnr"><span>ARJUN</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='pricing'>
-                        <div className="mates" >
-                            <h1>Our Pric<span>i</span>ng<div className="mini">(🟢)</div>
-                            </h1>
-                            <img width="60" height="95" alt="" decoding="async" data-src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" src="https://dzinr.co.in/wp-content/uploads/2023/07/Arrow-1-1.svg" />
-                        </div>
-                        <div className="pricing-card">
-                            <Pricing />
                         </div>
                     </div>
                     <Work />
                     <Footer />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

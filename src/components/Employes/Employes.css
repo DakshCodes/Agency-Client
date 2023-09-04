@@ -1,0 +1,207 @@
+.employes {
+    height: 115vh !important;
+}
+
+#imgery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 10vw; */
+    width: 100%;
+    height: 50vh;
+    gap: 60px;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+    background-position: center center;
+    background-repeat: repeat;
+
+    /* border: 1px solid; */
+    padding: 7vw 7vw;
+}
+
+#imgery #imglef {
+    /* border: 1px solid; */
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+#imglef h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 3vw;
+    color: #fff;
+    /* display: inline-block; */
+}
+
+#imglef h1 span {
+    font-size: 3.6vw;
+    color: #14CF93;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#imgrig {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 65%;
+    height: 350px;
+    /* background-color: yellow; */
+    /* height: auto; */
+}
+
+#imgrig .imgcntnr {
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    position: absolute;
+    z-index: 999;
+    width: 15vw;
+    height: 25vw;
+    border-radius: 1vw;
+    /* background-color: red; */
+    filter: grayscale();
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+}
+
+
+
+#imgrig .imgcntnr span {
+    cursor: pointer;
+    --hover-shadows: 16px 16px 33px #121212,
+        -16px -16px 33px #303030;
+    --accent: fuchsia;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: #212121;
+    color: white;
+    padding: 1em 2em;
+    transition: all 300ms ease-in-out;
+}
+
+#imgrig .imgcntnr span:hover {
+    /* box-shadow: var(--hover-shadows); */
+    transform: scale(1.3);
+    background-color: #14CF93;
+}
+
+
+
+#imgrig .imgcntnr:hover {
+    filter: grayscale(0);
+}
+
+
+#imgrig .imgcntnr:nth-child(1) {
+    border: 1px solid #fff;
+    transform: translate(-120%, -7%) rotate(0deg) !important;
+    background-image: url('../../assets/team/aman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#imgrig .imgcntnr:nth-child(2) {
+    border: 1px solid #fff;
+    transform: translate(0%, -5%) rotate(0deg) !important;
+    background-image: url('../../assets/team/daksh.jpg');
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#imgrig .imgcntnr:nth-child(3) {
+    border: 1px solid #fff;
+    transform: translate(120%, -7%) rotate(-0deg) !important;
+    background-image: url('../../assets/team/arjun.jpg');
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.employes {
+    height: 110vh;
+    width: 100%;
+    /* margin-top: 7vw; */
+}
+
+.mates {
+    background-color: #000000;
+    background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+    background-position: center center;
+    background-repeat: repeat;
+    position: relative;
+    color: #fff;
+    padding: 0 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mates h1 {
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+    /* letter-spacing: 10px; */
+    font-size: 5vw;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.mates h1 span {
+    color: #14CF93;
+    font-style: italic;
+    font-size: 5vw;
+}
+
+.o-ui-arrow {
+    transform: rotate(90deg);
+    width: 5vw;
+
+}
+
+.o-ui-arrow path {
+    stroke: rgb(158, 158, 158);
+}
+
+.mates h1 .mini {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-left: 3vw;
+}
+
+.mates img {
+    transform: rotate(135deg) translateY(-50%);
+    width: 50px;
+    align-items: center;
+}
+
+
+.back-2 {
+    position: absolute;
+    left: 65%;
+    top: 3%;
+    transform: translate(-50%, 5%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.back-2 i {
+    font-size: 4vw;
+    color: rgb(78, 75, 75);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.back-2 i:hover {
+    color: #fff;
+    padding-left: 10px;
+}

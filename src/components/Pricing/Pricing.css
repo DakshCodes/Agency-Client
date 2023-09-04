@@ -1,14 +1,67 @@
-.parent-pricing {
-    height: 200vh;
+.pricing {
+    height: 210vh;
+    width: 100%;
     background-color: #000000;
     background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
     background-position: center center;
     background-repeat: repeat;
-    background-size: 100% auto;
+    color: #fff;
+    /* position: relative; */
+}
+
+
+
+.pricing .mates {
+    position: relative;
+    color: #fff;
+    padding: 0 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.pricing .mates h1 {
+    display: flex;
+    align-items: baseline;
+    /* letter-spacing: 10px; */
+    font-size: 5vw;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+.pricing .mates h1 span {
+    color: #14CF93;
+    font-style: italic;
+    font-size: 5vw;
+}
+
+.pricing .o-ui-arrow {
+    transform: rotate(90deg);
+    width: 5vw;
+
+}
+
+.pricing .o-ui-arrow path {
+    stroke: rgb(158, 158, 158);
+}
+
+.pricing .mates h1 .mini {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-left: 3vw;
+}
+
+.pricing .mates img {
+    transform: rotate(135deg);
+}
+
+.parent-pricing {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 5vw;
+    padding: 10px 4vw;
 }
 
 .parent-pricing .div1 {
@@ -18,6 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 70px;
 }
 
 .parent-pricing .div1 h1 {
@@ -59,7 +113,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    
+    margin-bottom: 4vw;
+
 }
 
 .parent-pricing .div2 .container {
@@ -90,7 +145,7 @@
 }
 
 .parent-pricing .div2 .container .box .title {
-    font-size: 2.3rem;
+    font-size: 2.3vw;
     font-weight: 400;
     letter-spacing: .1em;
     text-align: center;
@@ -100,7 +155,7 @@
 
 .parent-pricing .div2 .container .box .title span {
     color: #14CF93;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     font-weight: 100;
     /* letter-spacing: em */
 }
@@ -117,7 +172,7 @@
     color: #fff;
     font-weight: 400;
     letter-spacing: 1.4px;
-    margin-bottom: 2vw;
+    margin-bottom: 40px;
 }
 
 .proccess .btn {
@@ -172,7 +227,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap:25px;
+    gap: 25px;
     margin-left: 25%;
     margin-top: 1rem;
     text-align: left;
@@ -180,7 +235,7 @@
 
 .proccess .points p {
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1vw;
     display: flex;
     letter-spacing: 2.5px;
     align-items: center;
@@ -188,7 +243,7 @@
 }
 
 .proccess .points p svg {
-    font-size: 1rem;
+    font-size: 1vw;
     /* position: absolute; */
     margin-right: 30px;
 }
@@ -240,11 +295,11 @@
     text-align: center;
     line-height: 30px;
     margin: 25px 0px;
-    z-index:1;
+    z-index: 1;
 }
 
 .parent-pricing .div2 .container .box2 .title span {
-    z-index:1;
+    z-index: 1;
     color: #14CF93;
     font-size: 1rem;
     font-weight: 100;
@@ -311,6 +366,7 @@
 .proccess2 .btn:active {
     transform: scale(0.9);
 }
+
 .proccess2 .points {
     /* padding: 10px 0px; */
     height: 200px;
@@ -318,7 +374,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap:25px;
+    gap: 25px;
     margin-left: 25%;
     margin-top: 1rem;
     text-align: left;

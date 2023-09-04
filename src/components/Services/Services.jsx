@@ -1,5 +1,7 @@
 import React from 'react'
 import './Services.css'
+import './media.css'
+
 // import img1 from './wireframe.png'
 
 const Services = ({ img, title, desc }) => {

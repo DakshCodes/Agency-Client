@@ -1,0 +1,946 @@
+@media (min-width:250px) and (max-width: 400px) {
+
+    .back-2 {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+        transform: translate(100%, -10%);
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .back-2 i {
+        font-size: 9vw;
+        color: rgb(78, 75, 75);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    }
+
+    .back-2 i:hover {
+        color: #fff;
+        padding-left: 10px;
+    }
+
+    .employes {
+        height: 200vh !important;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+
+    }
+
+    .container-moon {
+        position: absolute;
+        display: inline-block;
+        top: -140%;
+        left: -40%;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        animation: rotate_3922 3s linear infinite;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+        transition: all 300ms ease-in-out;
+    }
+
+    .container-moon span {
+        position: absolute;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+    }
+
+    .container-moon span:nth-of-type(1) {
+        filter: blur(5px);
+    }
+
+    .container-moonr span:nth-of-type(2) {
+        filter: blur(10px);
+    }
+
+    .container-moon span:nth-of-type(3) {
+        filter: blur(25px);
+    }
+
+    .container-moon span:nth-of-type(4) {
+        filter: blur(50px);
+    }
+
+    .container-moon::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background-color: #fff;
+        border: solid 5px #ffffff;
+        border-radius: 50%;
+    }
+
+    @keyframes rotate_3922 {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+            /* opacity: 0.5; */
+        }
+
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+            /* opacity: 0.8; */
+        }
+    }
+
+    #imgery {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40vw !important;
+        align-items: center;
+        /* padding-top: 10vw; */
+        width: 100%;
+        gap: 60px;
+        height: 200vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        line-height: 1.2;
+        /* border: 1px solid red; */
+        padding: 0vw 7vw !important;
+    }
+
+    #imgery #imglef {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 95%;
+        height: auto;
+        text-align: center;
+        margin: 4vw auto;
+    }
+
+    #imglef h1 {
+        width: 100% !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 5.3vw;
+        color: #fff;
+        /* display: inline-block; */
+    }
+
+    #imglef h1 span {
+        font-size: 7vw;
+        color: #14CF93;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    #imgrig {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        margin-top: -2vw;
+    }
+
+    #imgrig .imgcntnr {
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        position: absolute;
+        z-index: 999;
+        width: 46vw;
+        height: 60vw;
+        border-radius: 1vw;
+        /* background-color: red; */
+        filter: grayscale();
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    }
+
+
+
+    #imgrig .imgcntnr span {
+        cursor: pointer;
+        --hover-shadows: 16px 16px 33px #121212,
+            -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        color: white;
+        padding: 0.61em 1em;
+        transition: all 300ms ease-in-out;
+    }
+
+    #imgrig .imgcntnr span:hover {
+        /* box-shadow: var(--hover-shadows); */
+        transform: scale(1.3);
+        background-color: #14CF93;
+    }
+
+
+
+    #imgrig .imgcntnr:hover {
+        filter: grayscale(0);
+    }
+
+
+    #imgrig .imgcntnr:nth-child(1) {
+        transform: translate(0%, -120%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/aman.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #imgrig .imgcntnr:nth-child(2) {
+        transform: translate(0%, -5%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/daksh.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #imgrig .imgcntnr:nth-child(3) {
+        transform: translate(0%, 110%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/arjun.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .employes {
+        height: 110vh;
+        width: 100%;
+        /* margin-top: 7vw; */
+    }
+
+    .mates {
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        position: relative;
+        color: #fff;
+        padding: 2vw 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .mates h1 {
+        display: flex;
+        align-items: baseline;
+
+        /* letter-spacing: 10px; */
+        font-size: 8vw;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+
+    .mates h1 span {
+        color: #14CF93;
+        font-style: italic;
+        font-size: 5vw;
+    }
+
+    .o-ui-arrow {
+        transform: rotate(90deg);
+        width: 5vw;
+
+    }
+
+    .o-ui-arrow path {
+        stroke: rgb(158, 158, 158);
+    }
+
+    .mates h1 .mini {
+        font-size: 2vw;
+        font-weight: 500;
+        margin-left: 3vw;
+    }
+
+    .mates img {
+        transform: rotate(135deg);
+    }
+
+    #emp-img {
+        width: 30px;
+    }
+
+    .emp-btn .btn {
+        top: 140%;
+        transform: translate(-50%, 30%);
+        left: 50%;
+        padding: 1em 2em;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .emp-btn .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #000000;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .emp-btn .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .emp-btn .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .emp-btn .btn:active {
+        transform: scale(0.9);
+    }
+
+}
+
+@media (min-width:400px) and (max-width: 600px) {
+    .back-2 {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+        transform: translate(100%, -10%);
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .back-2 i {
+        font-size: 9vw;
+        color: rgb(78, 75, 75);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    }
+
+    .back-2 i:hover {
+        color: #fff;
+        padding-left: 10px;
+    }
+
+    .employes {
+        height: 250vh !important;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+
+    }
+
+    .container-moon {
+        display: inline-block;
+        position: absolute;
+        top: -140%;
+        left: -40%;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        animation: rotate_3922 3s linear infinite;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+        transition: all 300ms ease-in-out;
+    }
+
+    .container-moon span {
+        position: absolute;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+    }
+
+    .container-moon span:nth-of-type(1) {
+        filter: blur(5px);
+    }
+
+    .container-moonr span:nth-of-type(2) {
+        filter: blur(10px);
+    }
+
+    .container-moon span:nth-of-type(3) {
+        filter: blur(25px);
+    }
+
+    .container-moon span:nth-of-type(4) {
+        filter: blur(50px);
+    }
+
+    .container-moon::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background-color: #fff;
+        border: solid 5px #ffffff;
+        border-radius: 50%;
+    }
+
+    @keyframes rotate_3922 {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+            /* opacity: 0.5; */
+        }
+
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+            /* opacity: 0.8; */
+        }
+    }
+
+    #imgery {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40vw !important;
+        align-items: center;
+        /* padding-top: 10vw; */
+        width: 100%;
+        gap: 60px;
+        height: 200vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        line-height: 1.2;
+        /* border: 1px solid red; */
+        padding: 0vw 7vw !important;
+    }
+
+    #imgery #imglef {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 95%;
+        height: auto;
+        text-align: center;
+        margin: 4vw auto;
+    }
+
+    #imglef h1 {
+        width: 100% !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 5.3vw;
+        color: #fff;
+        /* display: inline-block; */
+    }
+
+    #imglef h1 span {
+        font-size: 7vw;
+        color: #14CF93;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    #imgrig {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        margin-top: -2vw;
+    }
+
+    #imgrig .imgcntnr {
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        position: absolute;
+        z-index: 999;
+        width: 46vw;
+        height: 60vw;
+        border-radius: 1vw;
+        /* background-color: red; */
+        filter: grayscale();
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    }
+
+
+
+    #imgrig .imgcntnr span {
+        cursor: pointer;
+        --hover-shadows: 16px 16px 33px #121212,
+            -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        color: white;
+        padding: 0.61em 1em;
+        transition: all 300ms ease-in-out;
+    }
+
+    #imgrig .imgcntnr span:hover {
+        /* box-shadow: var(--hover-shadows); */
+        transform: scale(1.3);
+        background-color: #14CF93;
+    }
+
+
+
+    #imgrig .imgcntnr:hover {
+        filter: grayscale(0);
+    }
+
+
+    #imgrig .imgcntnr:nth-child(1) {
+        transform: translate(0%, -120%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/aman.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #imgrig .imgcntnr:nth-child(2) {
+        transform: translate(0%, -5%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/daksh.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #imgrig .imgcntnr:nth-child(3) {
+        transform: translate(0%, 110%) rotate(-0deg) !important;
+        background-image: url('../../assets/team/arjun.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .employes {
+        height: 110vh;
+        width: 100%;
+        /* margin-top: 7vw; */
+    }
+
+    .mates {
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        position: relative;
+        color: #fff;
+        padding: 2vw 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .mates h1 {
+        display: flex;
+        align-items: baseline;
+
+        /* letter-spacing: 10px; */
+        font-size: 8vw;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+
+    .mates h1 span {
+        color: #14CF93;
+        font-style: italic;
+        font-size: 5vw;
+    }
+
+    .o-ui-arrow {
+        transform: rotate(90deg);
+        width: 5vw;
+
+    }
+
+    .o-ui-arrow path {
+        stroke: rgb(158, 158, 158);
+    }
+
+    .mates h1 .mini {
+        font-size: 2vw;
+        font-weight: 500;
+        margin-left: 3vw;
+    }
+
+    .mates img {
+        transform: rotate(135deg);
+    }
+
+    #emp-img {
+        width: 30px;
+    }
+
+    .emp-btn .btn {
+        top: 90%;
+        transform: translate(-50%, -10%);
+        left: 50%;
+        padding: 0.6em 1.7em;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 13px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .emp-btn .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #000000;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .emp-btn .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .emp-btn .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .emp-btn .btn:active {
+        transform: scale(0.9);
+    }
+
+}
+
+@media (min-width:600px) and (max-width: 900px) {
+    .back-2 {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+        transform: translate(100%, -30%);
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .back-2 i {
+        font-size: 6vw;
+        color: rgb(78, 75, 75);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    }
+
+    .back-2 i:hover {
+        color: #fff;
+        padding-left: 10px;
+    }
+
+    .container-moon {
+        display: none;
+    }
+
+    .container-moon span {
+        position: absolute;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #9b59b6;
+        background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+    }
+
+    .container-moon span:nth-of-type(1) {
+        filter: blur(5px);
+    }
+
+    .container-moonr span:nth-of-type(2) {
+        filter: blur(10px);
+    }
+
+    .container-moon span:nth-of-type(3) {
+        filter: blur(25px);
+    }
+
+    .container-moon span:nth-of-type(4) {
+        filter: blur(50px);
+    }
+
+    .container-moon::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background-color: #fff;
+        border: solid 5px #ffffff;
+        border-radius: 50%;
+    }
+
+    @keyframes rotate_3922 {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+            /* opacity: 0.5; */
+        }
+
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+            /* opacity: 0.8; */
+        }
+    }
+
+    #imgery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 10vw; */
+        width: 100%;
+        height: 50vh;
+        gap: 60px;
+        height: 100vh;
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+
+        /* border: 1px solid; */
+        padding: 7vw 7vw;
+    }
+
+    #imgery #imglef {
+        /* border: 1px solid red; */
+        position: relative;
+        width: 95%;
+        height: auto;
+        text-align: center;
+        margin: 4vw auto;
+    }
+
+    #imglef h1 {
+        width: 100% !important;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 5.3vw;
+        color: #fff;
+        /* display: inline-block; */
+    }
+
+    #imglef h1 span {
+        font-size: 7vw;
+        color: #14CF93;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    #imgrig {
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 65%;
+        height: 350px;
+        /* background-color: yellow; */
+        /* height: auto; */
+    }
+
+    #imgrig .imgcntnr {
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        position: absolute;
+        z-index: 999;
+        width: 20vw;
+        height: 30vw;
+        border-radius: 1vw;
+        /* background-color: red; */
+        filter: grayscale();
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    }
+
+
+
+    #imgrig .imgcntnr span {
+        cursor: pointer;
+        --hover-shadows: 16px 16px 33px #121212,
+            -16px -16px 33px #303030;
+        --accent: fuchsia;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border: none;
+        border-radius: 1.1em;
+        background-color: #212121;
+        color: white;
+        padding: 1em 2em;
+        transition: all 300ms ease-in-out;
+    }
+
+    #imgrig .imgcntnr span:hover {
+        /* box-shadow: var(--hover-shadows); */
+        transform: scale(1.3);
+        background-color: #14CF93;
+    }
+
+
+
+    #imgrig .imgcntnr:hover {
+        filter: grayscale(0);
+    }
+
+
+    #imgrig .imgcntnr:nth-child(1) {
+        transform: translate(-75%, -5%) rotate(-10deg);
+        background-image: url('../../assets/team/aman.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #imgrig .imgcntnr:nth-child(2) {
+        /* transform: translate(-15%, -0%) rotate(-15deg); */
+        background-image: url('../../assets/team/daksh.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #imgrig .imgcntnr:nth-child(3) {
+        transform: translate(70%, -2%) rotate(10deg);
+        background-image: url('../../assets/team/arjun.jpg');
+        background-color: yellow;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .employes {
+        height: 110vh;
+        width: 100%;
+        /* margin-top: 7vw; */
+    }
+
+    .mates {
+        background-color: #000000;
+        background-image: url(https://dzinr.co.in/wp-content/uploads/2023/07/lines-1.webp);
+        background-position: center center;
+        background-repeat: repeat;
+        position: relative;
+        color: #fff;
+        padding: 0 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .mates h1 {
+        display: flex;
+        align-items: baseline;
+
+        /* letter-spacing: 10px; */
+        font-size: 5vw;
+        letter-spacing: 8px;
+        font-weight: 600;
+    }
+
+    .mates h1 span {
+        color: #14CF93;
+        font-style: italic;
+        font-size: 5vw;
+    }
+
+    .o-ui-arrow {
+        transform: rotate(90deg);
+        width: 5vw;
+
+    }
+
+    .o-ui-arrow path {
+        stroke: rgb(158, 158, 158);
+    }
+
+    .mates h1 .mini {
+        font-size: 2vw;
+        font-weight: 500;
+        margin-left: 3vw;
+    }
+
+    .mates img {
+        transform: rotate(135deg);
+    }
+
+
+    .emp-btn .btn {
+        top: 100%;
+        transform: translate(-50%, -10%);
+        left: 50%;
+        padding: 0.6em 1.7em;
+        background: none;
+        border: 2px solid #fff;
+        font-size: 13px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.3s;
+        border-radius: 12px;
+        background-color: #14CF93;
+        font-weight: bolder;
+        box-shadow: 0 2px 0 2px #000;
+    }
+
+    .emp-btn .btn:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 120%;
+        background-color: #000000;
+        top: 50%;
+        transform: skewX(30deg) translate(-180%, -50%);
+        transition: all 0.5s;
+    }
+
+    .emp-btn .btn:hover {
+        background-color: #4cc9f0;
+        color: #fff;
+        box-shadow: 0 2px 0 2px #0d3b66;
+    }
+
+    .emp-btn .btn:hover::before {
+        transform: skewX(30deg) translate(220%, -50%);
+        transition-delay: 0.1s;
+    }
+
+    .emp-btn .btn:active {
+        transform: scale(0.9);
+    }
+
+}
