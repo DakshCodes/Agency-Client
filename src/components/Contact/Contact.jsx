@@ -117,13 +117,13 @@ const Contact = () => {
                                 <Col span={12}>
                                     <span className='text-white font-semibold text-base'>Phone No.</span>
                                     <Form.Item label="" className='.form-item-label text-[#ffffffd9]' style={{ color: 'white' }} name={"phone_no"} rules={rules}>
-                                        <Input placeholder='' min={1} max={10} className='placeholder-gray-500 placeholder:font-semibold mt-3 text-white border-none rounded-md h-[2.4rem]' style={{ backgroundColor: '#3e3e3e' }} />
+                                        <Input type="number" placeholder='' min={1} max={10} className='placeholder-gray-500 placeholder:font-semibold mt-3 text-white border-none rounded-md h-[2.4rem]' style={{ backgroundColor: '#3e3e3e' }} />
                                     </Form.Item>
                                 </Col>
                                 <Col span={12}>
                                     <span className='text-white font-semibold text-base'>Email</span>
                                     <Form.Item label="" className='.form-item-label text-[#ffffffd9]' style={{ color: 'white' }} name={"email"} rules={rules}>
-                                        <Input placeholder='' className='placeholder-gray-500 placeholder:font-semibold mt-3 text-white border-none rounded-md h-[2.4rem]' style={{ backgroundColor: '#3e3e3e' }} />
+                                        <Input type='email' placeholder='' className='placeholder-gray-500 placeholder:font-semibold mt-3 text-white border-none rounded-md h-[2.4rem]' style={{ backgroundColor: '#3e3e3e' }} />
                                     </Form.Item>
                                 </Col>
 
